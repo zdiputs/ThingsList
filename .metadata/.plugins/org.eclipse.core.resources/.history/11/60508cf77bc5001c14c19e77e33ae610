@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//Core/Inc/oled.h=GB2312
+encoding//Core/Inc/oledfont.h=GB2312
+encoding//Core/Src/oled.c=GB2312
