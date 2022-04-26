@@ -1,0 +1,10 @@
+/tPen/EWARM/zmain/**/**/**/*
+/tPen/EWARM/zmain/**/**/*
+/tPen/EWARM/zmain/**/*
+/tPen/EWARM/zmain/*
+/tPen/Debug/**/**/**/**/*
+/tPen/Debug/**/**/**/*
+/tPen/Debug/**/**/*
+/tPen/Debug/**/*
+/tPen/Debug/*
+!.gitignore
