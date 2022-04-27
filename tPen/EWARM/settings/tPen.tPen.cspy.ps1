@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "E:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "F:\Zhang\eventListList\tPen\EWARM\settings\tPen.tPen.general.xcl" --backend -f "F:\Zhang\eventListList\tPen\EWARM\settings\tPen.tPen.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ProgramPro\supperlist\tPen\EWARM\settings\tPen.tPen.general.xcl" --backend -f "C:\ProgramPro\supperlist\tPen\EWARM\settings\tPen.tPen.driver.xcl" 
 }
 else
 {
-& "E:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "F:\Zhang\eventListList\tPen\EWARM\settings\tPen.tPen.general.xcl" --debug_file=$debugfile --backend -f "F:\Zhang\eventListList\tPen\EWARM\settings\tPen.tPen.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ProgramPro\supperlist\tPen\EWARM\settings\tPen.tPen.general.xcl" --debug_file=$debugfile --backend -f "C:\ProgramPro\supperlist\tPen\EWARM\settings\tPen.tPen.driver.xcl" 
 }

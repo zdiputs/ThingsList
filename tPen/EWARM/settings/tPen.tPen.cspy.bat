@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"E:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "F:\Zhang\eventListList\tPen\EWARM\settings\tPen.tPen.general.xcl" --backend -f "F:\Zhang\eventListList\tPen\EWARM\settings\tPen.tPen.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ProgramPro\supperlist\tPen\EWARM\settings\tPen.tPen.general.xcl" --backend -f "C:\ProgramPro\supperlist\tPen\EWARM\settings\tPen.tPen.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"E:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "F:\Zhang\eventListList\tPen\EWARM\settings\tPen.tPen.general.xcl" "--debug_file=%~1" --backend -f "F:\Zhang\eventListList\tPen\EWARM\settings\tPen.tPen.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ProgramPro\supperlist\tPen\EWARM\settings\tPen.tPen.general.xcl" "--debug_file=%~1" --backend -f "C:\ProgramPro\supperlist\tPen\EWARM\settings\tPen.tPen.driver.xcl" 
 
 @echo off 
 :end
