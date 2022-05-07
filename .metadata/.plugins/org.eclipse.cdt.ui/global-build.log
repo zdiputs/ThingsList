@@ -1,0 +1,1534 @@
+23:45:07 **** Build of configuration Debug for project tPen ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f401ccux.d" -MT"Core/Startup/startup_stm32f401ccux.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f401ccux.o" "../Core/Startup/startup_stm32f401ccux.s"
+arm-none-eabi-gcc "../Core/Src/adctemp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adctemp.d" -MT"Core/Src/adctemp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adctemp.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/oled.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/oled.d" -MT"Core/Src/oled.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/oled.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+In file included from ../Core/Src/oled.c:3:
+../Core/Inc/oledfont.h:9:33: warning: missing braces around initializer [-Wmissing-braces]
+    9 | const unsigned char F6x8[][6] = {
+      |                                 ^
+   10 | 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,// sp
+      | {                                 }
+   11 | 0x00, 0x00, 0x00, 0x2f, 0x00, 0x00,// !
+      | {                                 }
+   12 | 0x00, 0x00, 0x07, 0x00, 0x07, 0x00,// "
+      | {                                 }
+   13 | 0x00, 0x14, 0x7f, 0x14, 0x7f, 0x14,// #
+      | {                                 }
+   14 | 0x00, 0x24, 0x2a, 0x7f, 0x2a, 0x12,// $
+      | {                                 }
+   15 | 0x00, 0x62, 0x64, 0x08, 0x13, 0x23,// %
+      | {                                 }
+   16 | 0x00, 0x36, 0x49, 0x55, 0x22, 0x50,// &
+      | {                                 }
+   17 | 0x00, 0x00, 0x05, 0x03, 0x00, 0x00,// '
+      | {                                 }
+   18 | 0x00, 0x00, 0x1c, 0x22, 0x41, 0x00,// (
+      | {                                 }
+   19 | 0x00, 0x00, 0x41, 0x22, 0x1c, 0x00,// )
+      | {                                 }
+   20 | 0x00, 0x14, 0x08, 0x3E, 0x08, 0x14,// *
+      | {                                 }
+   21 | 0x00, 0x08, 0x08, 0x3E, 0x08, 0x08,// +
+      | {                                 }
+   22 | 0x00, 0x00, 0x00, 0xA0, 0x60, 0x00,// ,
+      | {                                 }
+   23 | 0x00, 0x08, 0x08, 0x08, 0x08, 0x08,// -
+      | {                                 }
+   24 | 0x00, 0x00, 0x60, 0x60, 0x00, 0x00,// .
+      | {                                 }
+   25 | 0x00, 0x20, 0x10, 0x08, 0x04, 0x02,// /
+      | {                                 }
+   26 | 0x00, 0x3E, 0x51, 0x49, 0x45, 0x3E,// 0
+      | {                                 }
+   27 | 0x00, 0x00, 0x42, 0x7F, 0x40, 0x00,// 1
+      | {                                 }
+   28 | 0x00, 0x42, 0x61, 0x51, 0x49, 0x46,// 2
+      | {                                 }
+   29 | 0x00, 0x21, 0x41, 0x45, 0x4B, 0x31,// 3
+      | {                                 }
+   30 | 0x00, 0x18, 0x14, 0x12, 0x7F, 0x10,// 4
+      | {                                 }
+   31 | 0x00, 0x27, 0x45, 0x45, 0x45, 0x39,// 5
+      | {                                 }
+   32 | 0x00, 0x3C, 0x4A, 0x49, 0x49, 0x30,// 6
+      | {                                 }
+   33 | 0x00, 0x01, 0x71, 0x09, 0x05, 0x03,// 7
+      | {                                 }
+   34 | 0x00, 0x36, 0x49, 0x49, 0x49, 0x36,// 8
+      | {                                 }
+   35 | 0x00, 0x06, 0x49, 0x49, 0x29, 0x1E,// 9
+      | {                                 }
+   36 | 0x00, 0x00, 0x36, 0x36, 0x00, 0x00,// :
+      | {                                 }
+   37 | 0x00, 0x00, 0x56, 0x36, 0x00, 0x00,// ;
+      | {                                 }
+   38 | 0x00, 0x08, 0x14, 0x22, 0x41, 0x00,// <
+      | {                                 }
+   39 | 0x00, 0x14, 0x14, 0x14, 0x14, 0x14,// =
+      | {                                 }
+   40 | 0x00, 0x00, 0x41, 0x22, 0x14, 0x08,// >
+      | {                                 }
+   41 | 0x00, 0x02, 0x01, 0x51, 0x09, 0x06,// ?
+      | {                                 }
+   42 | 0x00, 0x32, 0x49, 0x59, 0x51, 0x3E,// @
+      | {                                 }
+   43 | 0x00, 0x7C, 0x12, 0x11, 0x12, 0x7C,// A
+      | {                                 }
+   44 | 0x00, 0x7F, 0x49, 0x49, 0x49, 0x36,// B
+      | {                                 }
+   45 | 0x00, 0x3E, 0x41, 0x41, 0x41, 0x22,// C
+      | {                                 }
+   46 | 0x00, 0x7F, 0x41, 0x41, 0x22, 0x1C,// D
+      | {                                 }
+   47 | 0x00, 0x7F, 0x49, 0x49, 0x49, 0x41,// E
+      | {                                 }
+   48 | 0x00, 0x7F, 0x09, 0x09, 0x09, 0x01,// F
+      | {                                 }
+   49 | 0x00, 0x3E, 0x41, 0x49, 0x49, 0x7A,// G
+      | {                                 }
+   50 | 0x00, 0x7F, 0x08, 0x08, 0x08, 0x7F,// H
+      | {                                 }
+   51 | 0x00, 0x00, 0x41, 0x7F, 0x41, 0x00,// I
+      | {                                 }
+   52 | 0x00, 0x20, 0x40, 0x41, 0x3F, 0x01,// J
+      | {                                 }
+   53 | 0x00, 0x7F, 0x08, 0x14, 0x22, 0x41,// K
+      | {                                 }
+   54 | 0x00, 0x7F, 0x40, 0x40, 0x40, 0x40,// L
+      | {                                 }
+   55 | 0x00, 0x7F, 0x02, 0x0C, 0x02, 0x7F,// M
+      | {                                 }
+   56 | 0x00, 0x7F, 0x04, 0x08, 0x10, 0x7F,// N
+      | {                                 }
+   57 | 0x00, 0x3E, 0x41, 0x41, 0x41, 0x3E,// O
+      | {                                 }
+   58 | 0x00, 0x7F, 0x09, 0x09, 0x09, 0x06,// P
+      | {                                 }
+   59 | 0x00, 0x3E, 0x41, 0x51, 0x21, 0x5E,// Q
+      | {                                 }
+   60 | 0x00, 0x7F, 0x09, 0x19, 0x29, 0x46,// R
+      | {                                 }
+   61 | 0x00, 0x46, 0x49, 0x49, 0x49, 0x31,// S
+      | {                                 }
+   62 | 0x00, 0x01, 0x01, 0x7F, 0x01, 0x01,// T
+      | {                                 }
+   63 | 0x00, 0x3F, 0x40, 0x40, 0x40, 0x3F,// U
+      | {                                 }
+   64 | 0x00, 0x1F, 0x20, 0x40, 0x20, 0x1F,// V
+      | {                                 }
+   65 | 0x00, 0x3F, 0x40, 0x38, 0x40, 0x3F,// W
+      | {                                 }
+   66 | 0x00, 0x63, 0x14, 0x08, 0x14, 0x63,// X
+      | {                                 }
+   67 | 0x00, 0x07, 0x08, 0x70, 0x08, 0x07,// Y
+      | {                                 }
+   68 | 0x00, 0x61, 0x51, 0x49, 0x45, 0x43,// Z
+      | {                                 }
+   69 | 0x00, 0x00, 0x7F, 0x41, 0x41, 0x00,// [
+      | {                                 }
+   70 | 0x00, 0x55, 0x2A, 0x55, 0x2A, 0x55,// 55
+      | {                                 }
+   71 | 0x00, 0x00, 0x41, 0x41, 0x7F, 0x00,// ]
+      | {                                 }
+   72 | 0x00, 0x04, 0x02, 0x01, 0x02, 0x04,// ^
+      | {                                 }
+   73 | 0x00, 0x40, 0x40, 0x40, 0x40, 0x40,// _
+      | {                                 }
+   74 | 0x00, 0x00, 0x01, 0x02, 0x04, 0x00,// '
+      | {                                 }
+   75 | 0x00, 0x20, 0x54, 0x54, 0x54, 0x78,// a
+      | {                                 }
+   76 | 0x00, 0x7F, 0x48, 0x44, 0x44, 0x38,// b
+      | {                                 }
+   77 | 0x00, 0x38, 0x44, 0x44, 0x44, 0x20,// c
+      | {                                 }
+   78 | 0x00, 0x38, 0x44, 0x44, 0x48, 0x7F,// d
+      | {                                 }
+   79 | 0x00, 0x38, 0x54, 0x54, 0x54, 0x18,// e
+      | {                                 }
+   80 | 0x00, 0x08, 0x7E, 0x09, 0x01, 0x02,// f
+      | {                                 }
+   81 | 0x00, 0x18, 0xA4, 0xA4, 0xA4, 0x7C,// g
+      | {                                 }
+   82 | 0x00, 0x7F, 0x08, 0x04, 0x04, 0x78,// h
+      | {                                 }
+   83 | 0x00, 0x00, 0x44, 0x7D, 0x40, 0x00,// i
+      | {                                 }
+   84 | 0x00, 0x40, 0x80, 0x84, 0x7D, 0x00,// j
+      | {                                 }
+   85 | 0x00, 0x7F, 0x10, 0x28, 0x44, 0x00,// k
+      | {                                 }
+   86 | 0x00, 0x00, 0x41, 0x7F, 0x40, 0x00,// l
+      | {                                 }
+   87 | 0x00, 0x7C, 0x04, 0x18, 0x04, 0x78,// m
+      | {                                 }
+   88 | 0x00, 0x7C, 0x08, 0x04, 0x04, 0x78,// n
+      | {                                 }
+   89 | 0x00, 0x38, 0x44, 0x44, 0x44, 0x38,// o
+      | {                                 }
+   90 | 0x00, 0xFC, 0x24, 0x24, 0x24, 0x18,// p
+      | {                                 }
+   91 | 0x00, 0x18, 0x24, 0x24, 0x18, 0xFC,// q
+      | {                                 }
+   92 | 0x00, 0x7C, 0x08, 0x04, 0x04, 0x08,// r
+      | {                                 }
+   93 | 0x00, 0x48, 0x54, 0x54, 0x54, 0x20,// s
+      | {                                 }
+   94 | 0x00, 0x04, 0x3F, 0x44, 0x40, 0x20,// t
+      | {                                 }
+   95 | 0x00, 0x3C, 0x40, 0x40, 0x20, 0x7C,// u
+      | {                                 }
+   96 | 0x00, 0x1C, 0x20, 0x40, 0x20, 0x1C,// v
+      | {                                 }
+   97 | 0x00, 0x3C, 0x40, 0x30, 0x40, 0x3C,// w
+      | {                                 }
+   98 | 0x00, 0x44, 0x28, 0x10, 0x28, 0x44,// x
+      | {                                 }
+   99 | 0x00, 0x1C, 0xA0, 0xA0, 0xA0, 0x7C,// y
+      | {                                 }
+  100 | 0x00, 0x44, 0x64, 0x54, 0x4C, 0x44,// z
+      | {                                 }
+  101 | 0x14, 0x14, 0x14, 0x14, 0x14, 0x14// horiz lines
+      | {
+  102 | };
+      | }
+../Core/Src/oled.c:5:21: warning: missing braces around initializer [-Wmissing-braces]
+    5 | const GBX16 Hzk[] = {
+      |                     ^
+    6 |   "正", 0x00, 0x02, 0x02, 0xC2, 0x02, 0x02, 0x02, 0xFE,
+      |   {     {
+......
+    9 |   0x40, 0x40, 0x40, 0x40, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+   10 | 
+   11 |   "常", 0x20, 0x18, 0x08, 0x0A, 0xEC, 0xA8, 0xA8, 0xAF,
+      |   {     {
+......
+   14 |   0x02, 0x22, 0x42, 0x3F, 0x02, 0x00, 0x00, 0x00,
+      |                                                 }}
+   15 | 
+   16 |   "错", 0x80, 0x40, 0x70, 0xCF, 0x48, 0x48, 0x48, 0x48,
+      |   {     {
+......
+   19 |   0x49, 0x49, 0x49, 0x49, 0xFF, 0x01, 0x00, 0x00,
+      |                                                 }}
+   20 | 
+   21 |   "误", 0x40, 0x42, 0xC4, 0x0C, 0x00, 0x40, 0x5E, 0x52,
+      |   {     {
+......
+   24 |   0x1A, 0x07, 0x1A, 0x22, 0x42, 0xC3, 0x42, 0x00,
+      |                                                 }}
+   25 |   "运", 0x40, 0x42, 0x44, 0xCC, 0x00, 0x20, 0x22, 0x22,
+      |   {     {
+......
+   28 |   0x48, 0x48, 0x4A, 0x4C, 0x58, 0x60, 0x20, 0x00,
+      |                                                 }}
+   29 | 
+   30 |   "行", 0x00, 0x10, 0x88, 0xC4, 0x23, 0x40, 0x42, 0x42,
+      |   {     {
+......
+   33 |   0x00, 0x40, 0x80, 0x7F, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+   34 | 
+   35 |   "状", 0x00, 0x08, 0x30, 0x00, 0xFF, 0x20, 0x20, 0x20,
+      |   {    {
+......
+   38 |   0x03, 0x00, 0x03, 0x0C, 0x30, 0x60, 0x20, 0x00,
+      |                                                 }}
+   39 | 
+   40 |   "态", 0x04, 0x04, 0x84, 0x84, 0x44, 0x24, 0x54, 0x8F,
+      |   {   {
+......
+   43 |   0x40, 0x40, 0x70, 0x04, 0x08, 0x31, 0x00, 0x00,
+      |                                                 }}
+   44 |   "模", 0x10, 0x10, 0xD0, 0xFF, 0x94, 0x14, 0xE4, 0xBF,
+      |   {    {
+......
+   47 |   0x2A, 0x1E, 0x2A, 0x2A, 0x4B, 0xC8, 0x48, 0x00,
+      |                                                 }}
+   48 | 
+   49 |   "块", 0x20, 0x20, 0x20, 0xFF, 0x20, 0x20, 0x10, 0x10,
+      |   {     {
+......
+   52 |   0x07, 0x0A, 0x12, 0x22, 0x43, 0xC2, 0x42, 0x00,
+      |                                                 }}
+   53 | 
+   54 |   "数", 0x10, 0x92, 0x54, 0x30, 0xFF, 0x50, 0x94, 0x32,
+      |   {     {
+......
+   57 |   0x23, 0x14, 0x08, 0x16, 0x61, 0xC0, 0x40, 0x00,
+      |                                                 }}
+   58 |   "校", 0x10, 0x10, 0xD0, 0xFF, 0x90, 0x10, 0x88, 0x48,
+      |   {    {
+......
+   61 |   0x21, 0x16, 0x08, 0x16, 0x61, 0xC0, 0x40, 0x00,
+      |                                                 }}
+   62 | 
+   63 |   "准", 0x00, 0x02, 0x04, 0xEC, 0x40, 0x20, 0xF8, 0x4F,
+      |   {    {
+......
+   66 |   0x22, 0x22, 0x3F, 0x22, 0x23, 0x32, 0x20, 0x00,
+      |                                                 }}
+   67 | 
+   68 |   "波", 0x20, 0x42, 0x04, 0x0C, 0x80, 0xF8, 0x88, 0x88,
+      |   {     {
+......
+   71 |   0x14, 0x08, 0x14, 0x22, 0x41, 0xC0, 0x40, 0x00,
+      |                                                 }}
+   72 | 
+   73 |   "特", 0x20, 0x1C, 0x10, 0xFF, 0x90, 0x50, 0x48, 0x48,
+      |   {     {
+......
+   76 |   0x1A, 0x42, 0x82, 0x7F, 0x02, 0x03, 0x02, 0x00,
+      |                                                 }}
+   77 | 
+   78 |   "率", 0x00, 0x14, 0xA4, 0x44, 0x04, 0x24, 0xB5, 0x6E,
+      |   {     {
+......
+   81 |   0x09, 0x09, 0x0B, 0x08, 0x08, 0x0D, 0x08, 0x00,
+      |                                                 }}
+   82 | 
+   83 |   "地", 0x40, 0x40, 0xFE, 0x40, 0x40, 0x80, 0xFC, 0x40,
+      |   {     {
+......
+   86 |   0x40, 0x5F, 0x44, 0x48, 0x47, 0x40, 0x70, 0x00,
+      |                                                 }}
+   87 | 
+   88 |   "址", 0x10, 0x10, 0x10, 0xFF, 0x10, 0x18, 0x10, 0xF8,
+      |   {   {
+......
+   91 |   0x40, 0x40, 0x7F, 0x40, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+   92 |   "过", 0x40, 0x42, 0x44, 0xC8, 0x00, 0x08, 0x08, 0x48,
+      |   {     {
+......
+   95 |   0x41, 0x48, 0x50, 0x4F, 0x40, 0x60, 0x20, 0x00,
+      |                                                 }}
+   96 | 
+   97 |   "触", 0x20, 0xF8, 0x27, 0xF4, 0x2C, 0xE4, 0x00, 0xF0,
+      |   {     {
+......
+  100 |   0xC4, 0x44, 0x7F, 0x24, 0x34, 0x27, 0xC0, 0x00,
+      |                                                 }}
+  101 | 
+  102 |   "发", 0x00, 0x10, 0x18, 0x16, 0x10, 0x90, 0xF0, 0x9F,
+      |   {     {
+......
+  105 |   0x08, 0x14, 0x22, 0x21, 0x40, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  106 |   "欠", 0x80, 0x40, 0x20, 0x18, 0x0F, 0x08, 0x08, 0xE8,
+      |   {    {
+......
+  109 |   0x03, 0x0C, 0x10, 0x20, 0x40, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  110 | 
+  111 |   "补", 0x10, 0x10, 0x10, 0x11, 0xD6, 0x30, 0x98, 0x00,
+      |   {     {
+......
+  114 |   0x00, 0xFF, 0x00, 0x00, 0x01, 0x03, 0x00, 0x00,
+      |                                                 }}
+  115 | 
+  116 |   "偿", 0x80, 0x40, 0x20, 0xF8, 0x47, 0x30, 0x92, 0x94,
+      |   {     {
+......
+  119 |   0x54, 0x4C, 0x44, 0x54, 0x64, 0xC6, 0x04, 0x00,
+      |                                                 }}
+  120 |   "直", 0x00, 0x04, 0x04, 0xE4, 0xA4, 0xA4, 0xA4, 0xBF,
+      |   {   {
+......
+  123 |   0x4A, 0x4A, 0x4A, 0x7F, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+  124 |   "市", 0x08, 0x08, 0xC8, 0x48, 0x48, 0x48, 0x49, 0xFA,
+      |   {     {
+......
+  127 |   0x00, 0x00, 0x10, 0x20, 0x1F, 0x00, 0x00, 0x00,
+      |                                                 }}
+  128 | 
+  129 |   "报", 0x10, 0x10, 0x10, 0xFF, 0x90, 0x50, 0x00, 0xFE,
+      |   {     {
+......
+  132 |   0x22, 0x14, 0x08, 0x16, 0x21, 0x60, 0x20, 0x00,
+      |                                                 }}
+  133 | 
+  134 |   "警", 0x80, 0x92, 0x8A, 0xBF, 0xAA, 0xBB, 0xCA, 0xFA,
+      |   {     {
+......
+  137 |   0xAA, 0xAA, 0xAA, 0xEA, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+  138 |   "离", 0x04, 0x04, 0x04, 0xF4, 0x04, 0x8C, 0x55, 0x26,
+      |   {     {
+......
+  141 |   0x25, 0x35, 0x25, 0x45, 0x84, 0x7E, 0x04, 0x00,
+      |                                                 }}
+  142 |   "在", 0x08, 0x08, 0x08, 0x08, 0xC8, 0x38, 0x0F, 0x08,
+      |   {     {
+......
+  145 |   0x41, 0x7F, 0x41, 0x41, 0x41, 0x60, 0x40, 0x00,
+      |                                                 }}
+  146 |   "线", 0x00, 0x20, 0x30, 0xAC, 0x63, 0x20, 0x30, 0x20,
+      |   {     {
+......
+  149 |   0x21, 0x17, 0x18, 0x24, 0x42, 0x80, 0xE0, 0x00,
+      |                                                 }}
+  150 |   "模", 0x10, 0x10, 0xD0, 0xFF, 0x94, 0x14, 0xE4, 0xBF,
+      |   {    {
+......
+  153 |   0x2A, 0x1E, 0x2A, 0x2A, 0x4B, 0xC8, 0x48, 0x00,
+      |                                                 }}
+  154 |   "块", 0x20, 0x20, 0x20, 0xFF, 0x20, 0x20, 0x10, 0x10,
+      |   {     {
+......
+  157 |   0x07, 0x0A, 0x12, 0x22, 0x43, 0xC2, 0x42, 0x00,
+      |                                                 }}
+  158 |   "启", 0x00, 0x00, 0x00, 0xFC, 0x44, 0x44, 0x44, 0x45,
+      |   {     {
+......
+  161 |   0x42, 0x42, 0x42, 0x42, 0x42, 0xFF, 0x02, 0x00,
+      |                                                 }}
+  162 |   "用", 0x00, 0x00, 0xFE, 0x22, 0x22, 0x22, 0x22, 0xFE,
+      |   {     {
+......
+  165 |   0x02, 0x02, 0x42, 0x82, 0x7F, 0x00, 0x00, 0x00,
+      |                                                 }}
+  166 |   "屏", 0x00, 0x00, 0xFE, 0x12, 0x92, 0x92, 0xB2, 0xD2,
+      |   {     {
+......
+  169 |   0x04, 0x04, 0xFF, 0x04, 0x04, 0x06, 0x04, 0x00,
+      |                                                 }}
+  170 |   "蔽", 0x04, 0x94, 0xA4, 0x84, 0xF4, 0xCF, 0xA4, 0x94,
+      |   {     {
+......
+  173 |   0x81, 0x40, 0x2F, 0x10, 0x28, 0xC7, 0x40, 0x00,
+      |                                                 }}
+  174 | 
+  175 |   "设", 0x40, 0x40, 0x42, 0xCC, 0x00, 0x40, 0xA0, 0x9F,
+      |   {     {
+......
+  178 |   0x2C, 0x10, 0x28, 0x26, 0x41, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  179 |   "置", 0x00, 0x10, 0x17, 0xD5, 0x55, 0x57, 0x55, 0x7D,
+      |   {     {
+......
+  182 |   0x55, 0x55, 0x55, 0x7F, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+  183 |   "出", 0x00, 0x00, 0xFC, 0x40, 0x40, 0x40, 0x40, 0xFF,
+      |   {     {
+......
+  186 |   0x40, 0x40, 0x40, 0x40, 0x40, 0xFE, 0x00, 0x00,
+      |                                                 }}
+  187 |   "开", 0x80, 0x82, 0x82, 0x82, 0xFE, 0x82, 0x82, 0x82,
+      |   {     {
+......
+  190 |   0x00, 0x00, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+  191 |   "关", 0x00, 0x10, 0x10, 0x11, 0x12, 0x1C, 0x10, 0xF0,
+      |   {     {
+......
+  194 |   0x0D, 0x11, 0x21, 0x21, 0x41, 0xC1, 0x41, 0x00,
+      |                                                 }}
+  195 |   "温", 0x10, 0x22, 0x64, 0x0C, 0x80, 0x00, 0xFE, 0x92,
+      |   {     {
+......
+  198 |   0x7E, 0x42, 0x7E, 0x42, 0x42, 0x7E, 0x40, 0x00,
+      |                                                 }}
+  199 |   "度", 0x00, 0x00, 0xFC, 0x24, 0x24, 0x24, 0xFC, 0xA5,
+      |   {     {
+......
+  202 |   0x12, 0x2A, 0x26, 0x42, 0x40, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  203 |   "℃", 0x00, 0x06, 0x09, 0x09, 0xE6, 0xF0, 0x18, 0x08,
+      |   {     {
+......
+  206 |   0x20, 0x20, 0x20, 0x10, 0x08, 0x00, 0x00, 0x00,
+      |                                                 }}
+  207 |   "退", 0x40, 0x42, 0x44, 0xCC, 0x00, 0x00, 0xFF, 0x49,
+      |   {     {
+......
+  210 |   0x85, 0x81, 0x82, 0x85, 0x88, 0xD8, 0x40, 0x00,
+      |                                                 }}
+  211 |   "电", 0x00, 0xF8, 0x48, 0x48, 0x48, 0x48, 0xFF, 0x48,
+      |   {     {
+......
+  214 |   0x42, 0x42, 0x42, 0x47, 0x40, 0x70, 0x00, 0x00,
+      |                                                 }}
+  215 |   "压", 0x00, 0x00, 0xFE, 0x02, 0x82, 0x82, 0x82, 0x82,
+      |   {    {
+......
+  218 |   0x7F, 0x40, 0x42, 0x44, 0x4C, 0x60, 0x40, 0x00,
+      |                                                 }}
+  219 |   "流", 0x10, 0x22, 0x64, 0x0C, 0x80, 0x44, 0x44, 0x64,
+      |   {     {
+......
+  222 |   0x00, 0xFF, 0x00, 0x3F, 0x40, 0x40, 0x70, 0x00,
+      |                                                 }}
+  223 | 
+  224 |   "查", 0x84, 0x84, 0x44, 0xE4, 0x54, 0x4C, 0x44, 0x7F,
+      |   {     {
+......
+  227 |   0x52, 0x52, 0x52, 0x5F, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+  228 | 
+  229 |   "看", 0x20, 0x2A, 0x2A, 0xAA, 0xEA, 0xBA, 0xAE, 0xAA,
+      |   {     {
+......
+  232 |   0x4A, 0x4A, 0x4A, 0xFF, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+  233 | 
+  234 |   "交", 0x08, 0x08, 0x88, 0x48, 0xB8, 0x08, 0x09, 0x0E,
+      |   {     {
+......
+  237 |   0x0A, 0x11, 0x20, 0x20, 0x40, 0xC0, 0x40, 0x00};
+      |                                                 }}
+arm-none-eabi-gcc -o "tPen.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ProgramPro\TemperatureProject\tPen\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tPen.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: tPen.elf
+ 
+arm-none-eabi-size   tPen.elf 
+arm-none-eabi-objdump -h -S  tPen.elf  > "tPen.list"
+   text	   data	    bss	    dec	    hex	filename
+  33204	    104	   3064	  36372	   8e14	tPen.elf
+Finished building: default.size.stdout
+ 
+Finished building: tPen.list
+ 
+23:45:29 **** Incremental Build of configuration Debug for project tPen ****
+make -j12 all 
+arm-none-eabi-size   tPen.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33204	    104	   3064	  36372	   8e14	tPen.elf
+Finished building: default.size.stdout
+ 
+22:24:44 **** Build of configuration Debug for project tPen ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/ThingsList.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ThingsList.d" -MT"Core/Src/ThingsList.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ThingsList.o"
+arm-none-eabi-gcc "../Core/Src/ThingsMenuList.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ThingsMenuList.d" -MT"Core/Src/ThingsMenuList.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ThingsMenuList.o"
+arm-none-eabi-gcc "../Core/Src/ThingsTOS.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ThingsTOS.d" -MT"Core/Src/ThingsTOS.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ThingsTOS.o"
+arm-none-eabi-gcc "../Core/Src/adctemp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adctemp.d" -MT"Core/Src/adctemp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adctemp.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+In file included from ../Core/Src/ThingsMenuList.c:8:
+../Core/Inc/oledfont.h:9:33: warning: missing braces around initializer [-Wmissing-braces]
+    9 | const unsigned char F6x8[][6] = {
+      |                                 ^
+   10 | 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,// sp
+      | {                                 }
+   11 | 0x00, 0x00, 0x00, 0x2f, 0x00, 0x00,// !
+      | {                                 }
+   12 | 0x00, 0x00, 0x07, 0x00, 0x07, 0x00,// "
+      | {                                 }
+   13 | 0x00, 0x14, 0x7f, 0x14, 0x7f, 0x14,// #
+      | {                                 }
+   14 | 0x00, 0x24, 0x2a, 0x7f, 0x2a, 0x12,// $
+      | {                                 }
+   15 | 0x00, 0x62, 0x64, 0x08, 0x13, 0x23,// %
+      | {                                 }
+   16 | 0x00, 0x36, 0x49, 0x55, 0x22, 0x50,// &
+      | {                                 }
+   17 | 0x00, 0x00, 0x05, 0x03, 0x00, 0x00,// '
+      | {                                 }
+   18 | 0x00, 0x00, 0x1c, 0x22, 0x41, 0x00,// (
+      | {                                 }
+   19 | 0x00, 0x00, 0x41, 0x22, 0x1c, 0x00,// )
+      | {                                 }
+   20 | 0x00, 0x14, 0x08, 0x3E, 0x08, 0x14,// *
+      | {                                 }
+   21 | 0x00, 0x08, 0x08, 0x3E, 0x08, 0x08,// +
+      | {                                 }
+   22 | 0x00, 0x00, 0x00, 0xA0, 0x60, 0x00,// ,
+      | {                                 }
+   23 | 0x00, 0x08, 0x08, 0x08, 0x08, 0x08,// -
+      | {                                 }
+   24 | 0x00, 0x00, 0x60, 0x60, 0x00, 0x00,// .
+      | {                                 }
+   25 | 0x00, 0x20, 0x10, 0x08, 0x04, 0x02,// /
+      | {                                 }
+   26 | 0x00, 0x3E, 0x51, 0x49, 0x45, 0x3E,// 0
+      | {                                 }
+   27 | 0x00, 0x00, 0x42, 0x7F, 0x40, 0x00,// 1
+      | {                                 }
+   28 | 0x00, 0x42, 0x61, 0x51, 0x49, 0x46,// 2
+      | {                                 }
+   29 | 0x00, 0x21, 0x41, 0x45, 0x4B, 0x31,// 3
+      | {                                 }
+   30 | 0x00, 0x18, 0x14, 0x12, 0x7F, 0x10,// 4
+      | {                                 }
+   31 | 0x00, 0x27, 0x45, 0x45, 0x45, 0x39,// 5
+      | {                                 }
+   32 | 0x00, 0x3C, 0x4A, 0x49, 0x49, 0x30,// 6
+      | {                                 }
+   33 | 0x00, 0x01, 0x71, 0x09, 0x05, 0x03,// 7
+      | {                                 }
+   34 | 0x00, 0x36, 0x49, 0x49, 0x49, 0x36,// 8
+      | {                                 }
+   35 | 0x00, 0x06, 0x49, 0x49, 0x29, 0x1E,// 9
+      | {                                 }
+   36 | 0x00, 0x00, 0x36, 0x36, 0x00, 0x00,// :
+      | {                                 }
+   37 | 0x00, 0x00, 0x56, 0x36, 0x00, 0x00,// ;
+      | {                                 }
+   38 | 0x00, 0x08, 0x14, 0x22, 0x41, 0x00,// <
+      | {                                 }
+   39 | 0x00, 0x14, 0x14, 0x14, 0x14, 0x14,// =
+      | {                                 }
+   40 | 0x00, 0x00, 0x41, 0x22, 0x14, 0x08,// >
+      | {                                 }
+   41 | 0x00, 0x02, 0x01, 0x51, 0x09, 0x06,// ?
+      | {                                 }
+   42 | 0x00, 0x32, 0x49, 0x59, 0x51, 0x3E,// @
+      | {                                 }
+   43 | 0x00, 0x7C, 0x12, 0x11, 0x12, 0x7C,// A
+      | {                                 }
+   44 | 0x00, 0x7F, 0x49, 0x49, 0x49, 0x36,// B
+      | {                                 }
+   45 | 0x00, 0x3E, 0x41, 0x41, 0x41, 0x22,// C
+      | {                                 }
+   46 | 0x00, 0x7F, 0x41, 0x41, 0x22, 0x1C,// D
+      | {                                 }
+   47 | 0x00, 0x7F, 0x49, 0x49, 0x49, 0x41,// E
+      | {                                 }
+   48 | 0x00, 0x7F, 0x09, 0x09, 0x09, 0x01,// F
+      | {                                 }
+   49 | 0x00, 0x3E, 0x41, 0x49, 0x49, 0x7A,// G
+      | {                                 }
+   50 | 0x00, 0x7F, 0x08, 0x08, 0x08, 0x7F,// H
+      | {                                 }
+   51 | 0x00, 0x00, 0x41, 0x7F, 0x41, 0x00,// I
+      | {                                 }
+   52 | 0x00, 0x20, 0x40, 0x41, 0x3F, 0x01,// J
+      | {                                 }
+   53 | 0x00, 0x7F, 0x08, 0x14, 0x22, 0x41,// K
+      | {                                 }
+   54 | 0x00, 0x7F, 0x40, 0x40, 0x40, 0x40,// L
+      | {                                 }
+   55 | 0x00, 0x7F, 0x02, 0x0C, 0x02, 0x7F,// M
+      | {                                 }
+   56 | 0x00, 0x7F, 0x04, 0x08, 0x10, 0x7F,// N
+      | {                                 }
+   57 | 0x00, 0x3E, 0x41, 0x41, 0x41, 0x3E,// O
+      | {                                 }
+   58 | 0x00, 0x7F, 0x09, 0x09, 0x09, 0x06,// P
+      | {                                 }
+   59 | 0x00, 0x3E, 0x41, 0x51, 0x21, 0x5E,// Q
+      | {                                 }
+   60 | 0x00, 0x7F, 0x09, 0x19, 0x29, 0x46,// R
+      | {                                 }
+   61 | 0x00, 0x46, 0x49, 0x49, 0x49, 0x31,// S
+      | {                                 }
+   62 | 0x00, 0x01, 0x01, 0x7F, 0x01, 0x01,// T
+      | {                                 }
+   63 | 0x00, 0x3F, 0x40, 0x40, 0x40, 0x3F,// U
+      | {                                 }
+   64 | 0x00, 0x1F, 0x20, 0x40, 0x20, 0x1F,// V
+      | {                                 }
+   65 | 0x00, 0x3F, 0x40, 0x38, 0x40, 0x3F,// W
+      | {                                 }
+   66 | 0x00, 0x63, 0x14, 0x08, 0x14, 0x63,// X
+      | {                                 }
+   67 | 0x00, 0x07, 0x08, 0x70, 0x08, 0x07,// Y
+      | {                                 }
+   68 | 0x00, 0x61, 0x51, 0x49, 0x45, 0x43,// Z
+      | {                                 }
+   69 | 0x00, 0x00, 0x7F, 0x41, 0x41, 0x00,// [
+      | {                                 }
+   70 | 0x00, 0x55, 0x2A, 0x55, 0x2A, 0x55,// 55
+      | {                                 }
+   71 | 0x00, 0x00, 0x41, 0x41, 0x7F, 0x00,// ]
+      | {                                 }
+   72 | 0x00, 0x04, 0x02, 0x01, 0x02, 0x04,// ^
+      | {                                 }
+   73 | 0x00, 0x40, 0x40, 0x40, 0x40, 0x40,// _
+      | {                                 }
+   74 | 0x00, 0x00, 0x01, 0x02, 0x04, 0x00,// '
+      | {                                 }
+   75 | 0x00, 0x20, 0x54, 0x54, 0x54, 0x78,// a
+      | {                                 }
+   76 | 0x00, 0x7F, 0x48, 0x44, 0x44, 0x38,// b
+      | {                                 }
+   77 | 0x00, 0x38, 0x44, 0x44, 0x44, 0x20,// c
+      | {                                 }
+   78 | 0x00, 0x38, 0x44, 0x44, 0x48, 0x7F,// d
+      | {                                 }
+   79 | 0x00, 0x38, 0x54, 0x54, 0x54, 0x18,// e
+      | {                                 }
+   80 | 0x00, 0x08, 0x7E, 0x09, 0x01, 0x02,// f
+      | {                                 }
+   81 | 0x00, 0x18, 0xA4, 0xA4, 0xA4, 0x7C,// g
+      | {                                 }
+   82 | 0x00, 0x7F, 0x08, 0x04, 0x04, 0x78,// h
+      | {                                 }
+   83 | 0x00, 0x00, 0x44, 0x7D, 0x40, 0x00,// i
+      | {                                 }
+   84 | 0x00, 0x40, 0x80, 0x84, 0x7D, 0x00,// j
+      | {                                 }
+   85 | 0x00, 0x7F, 0x10, 0x28, 0x44, 0x00,// k
+      | {                                 }
+   86 | 0x00, 0x00, 0x41, 0x7F, 0x40, 0x00,// l
+      | {                                 }
+   87 | 0x00, 0x7C, 0x04, 0x18, 0x04, 0x78,// m
+      | {                                 }
+   88 | 0x00, 0x7C, 0x08, 0x04, 0x04, 0x78,// n
+      | {                                 }
+   89 | 0x00, 0x38, 0x44, 0x44, 0x44, 0x38,// o
+      | {                                 }
+   90 | 0x00, 0xFC, 0x24, 0x24, 0x24, 0x18,// p
+      | {                                 }
+   91 | 0x00, 0x18, 0x24, 0x24, 0x18, 0xFC,// q
+      | {                                 }
+   92 | 0x00, 0x7C, 0x08, 0x04, 0x04, 0x08,// r
+      | {                                 }
+   93 | 0x00, 0x48, 0x54, 0x54, 0x54, 0x20,// s
+      | {                                 }
+   94 | 0x00, 0x04, 0x3F, 0x44, 0x40, 0x20,// t
+      | {                                 }
+   95 | 0x00, 0x3C, 0x40, 0x40, 0x20, 0x7C,// u
+      | {                                 }
+   96 | 0x00, 0x1C, 0x20, 0x40, 0x20, 0x1C,// v
+      | {                                 }
+   97 | 0x00, 0x3C, 0x40, 0x30, 0x40, 0x3C,// w
+      | {                                 }
+   98 | 0x00, 0x44, 0x28, 0x10, 0x28, 0x44,// x
+      | {                                 }
+   99 | 0x00, 0x1C, 0xA0, 0xA0, 0xA0, 0x7C,// y
+      | {                                 }
+  100 | 0x00, 0x44, 0x64, 0x54, 0x4C, 0x44,// z
+      | {                                 }
+  101 | 0x14, 0x14, 0x14, 0x14, 0x14, 0x14// horiz lines
+      | {
+  102 | };
+      | }
+../Core/Src/ThingsMenuList.c:10:21: warning: missing braces around initializer [-Wmissing-braces]
+   10 | const GBX16 Hzk[] = {
+      |                     ^
+   11 |   "正", 0x00, 0x02, 0x02, 0xC2, 0x02, 0x02, 0x02, 0xFE,
+      |   {     {
+......
+   14 |   0x40, 0x40, 0x40, 0x40, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+   15 | 
+   16 |   "常", 0x20, 0x18, 0x08, 0x0A, 0xEC, 0xA8, 0xA8, 0xAF,
+      |   {     {
+......
+   19 |   0x02, 0x22, 0x42, 0x3F, 0x02, 0x00, 0x00, 0x00,
+      |                                                 }}
+   20 | 
+   21 |   "错", 0x80, 0x40, 0x70, 0xCF, 0x48, 0x48, 0x48, 0x48,
+      |   {     {
+......
+   24 |   0x49, 0x49, 0x49, 0x49, 0xFF, 0x01, 0x00, 0x00,
+      |                                                 }}
+   25 | 
+   26 |   "误", 0x40, 0x42, 0xC4, 0x0C, 0x00, 0x40, 0x5E, 0x52,
+      |   {     {
+......
+   29 |   0x1A, 0x07, 0x1A, 0x22, 0x42, 0xC3, 0x42, 0x00,
+      |                                                 }}
+   30 |   "运", 0x40, 0x42, 0x44, 0xCC, 0x00, 0x20, 0x22, 0x22,
+      |   {     {
+......
+   33 |   0x48, 0x48, 0x4A, 0x4C, 0x58, 0x60, 0x20, 0x00,
+      |                                                 }}
+   34 | 
+   35 |   "行", 0x00, 0x10, 0x88, 0xC4, 0x23, 0x40, 0x42, 0x42,
+      |   {     {
+......
+   38 |   0x00, 0x40, 0x80, 0x7F, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+   39 | 
+   40 |   "状", 0x00, 0x08, 0x30, 0x00, 0xFF, 0x20, 0x20, 0x20,
+      |   {    {
+......
+   43 |   0x03, 0x00, 0x03, 0x0C, 0x30, 0x60, 0x20, 0x00,
+      |                                                 }}
+   44 | 
+   45 |   "态", 0x04, 0x04, 0x84, 0x84, 0x44, 0x24, 0x54, 0x8F,
+      |   {   {
+......
+   48 |   0x40, 0x40, 0x70, 0x04, 0x08, 0x31, 0x00, 0x00,
+      |                                                 }}
+   49 |   "模", 0x10, 0x10, 0xD0, 0xFF, 0x94, 0x14, 0xE4, 0xBF,
+      |   {    {
+......
+   52 |   0x2A, 0x1E, 0x2A, 0x2A, 0x4B, 0xC8, 0x48, 0x00,
+      |                                                 }}
+   53 | 
+   54 |   "块", 0x20, 0x20, 0x20, 0xFF, 0x20, 0x20, 0x10, 0x10,
+      |   {     {
+......
+   57 |   0x07, 0x0A, 0x12, 0x22, 0x43, 0xC2, 0x42, 0x00,
+      |                                                 }}
+   58 | 
+   59 |   "数", 0x10, 0x92, 0x54, 0x30, 0xFF, 0x50, 0x94, 0x32,
+      |   {     {
+......
+   62 |   0x23, 0x14, 0x08, 0x16, 0x61, 0xC0, 0x40, 0x00,
+      |                                                 }}
+   63 |   "校", 0x10, 0x10, 0xD0, 0xFF, 0x90, 0x10, 0x88, 0x48,
+      |   {    {
+......
+   66 |   0x21, 0x16, 0x08, 0x16, 0x61, 0xC0, 0x40, 0x00,
+      |                                                 }}
+   67 | 
+   68 |   "准", 0x00, 0x02, 0x04, 0xEC, 0x40, 0x20, 0xF8, 0x4F,
+      |   {    {
+......
+   71 |   0x22, 0x22, 0x3F, 0x22, 0x23, 0x32, 0x20, 0x00,
+      |                                                 }}
+   72 | 
+   73 |   "波", 0x20, 0x42, 0x04, 0x0C, 0x80, 0xF8, 0x88, 0x88,
+      |   {     {
+......
+   76 |   0x14, 0x08, 0x14, 0x22, 0x41, 0xC0, 0x40, 0x00,
+      |                                                 }}
+   77 | 
+   78 |   "特", 0x20, 0x1C, 0x10, 0xFF, 0x90, 0x50, 0x48, 0x48,
+      |   {     {
+......
+   81 |   0x1A, 0x42, 0x82, 0x7F, 0x02, 0x03, 0x02, 0x00,
+      |                                                 }}
+   82 | 
+   83 |   "率", 0x00, 0x14, 0xA4, 0x44, 0x04, 0x24, 0xB5, 0x6E,
+      |   {     {
+......
+   86 |   0x09, 0x09, 0x0B, 0x08, 0x08, 0x0D, 0x08, 0x00,
+      |                                                 }}
+   87 | 
+   88 |   "地", 0x40, 0x40, 0xFE, 0x40, 0x40, 0x80, 0xFC, 0x40,
+      |   {     {
+......
+   91 |   0x40, 0x5F, 0x44, 0x48, 0x47, 0x40, 0x70, 0x00,
+      |                                                 }}
+   92 | 
+   93 |   "址", 0x10, 0x10, 0x10, 0xFF, 0x10, 0x18, 0x10, 0xF8,
+      |   {   {
+......
+   96 |   0x40, 0x40, 0x7F, 0x40, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+   97 |   "过", 0x40, 0x42, 0x44, 0xC8, 0x00, 0x08, 0x08, 0x48,
+      |   {     {
+......
+  100 |   0x41, 0x48, 0x50, 0x4F, 0x40, 0x60, 0x20, 0x00,
+      |                                                 }}
+  101 | 
+  102 |   "触", 0x20, 0xF8, 0x27, 0xF4, 0x2C, 0xE4, 0x00, 0xF0,
+      |   {     {
+......
+  105 |   0xC4, 0x44, 0x7F, 0x24, 0x34, 0x27, 0xC0, 0x00,
+      |                                                 }}
+  106 | 
+  107 |   "发", 0x00, 0x10, 0x18, 0x16, 0x10, 0x90, 0xF0, 0x9F,
+      |   {     {
+......
+  110 |   0x08, 0x14, 0x22, 0x21, 0x40, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  111 |   "欠", 0x80, 0x40, 0x20, 0x18, 0x0F, 0x08, 0x08, 0xE8,
+      |   {    {
+......
+  114 |   0x03, 0x0C, 0x10, 0x20, 0x40, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  115 | 
+  116 |   "补", 0x10, 0x10, 0x10, 0x11, 0xD6, 0x30, 0x98, 0x00,
+      |   {     {
+......
+  119 |   0x00, 0xFF, 0x00, 0x00, 0x01, 0x03, 0x00, 0x00,
+      |                                                 }}
+  120 | 
+  121 |   "偿", 0x80, 0x40, 0x20, 0xF8, 0x47, 0x30, 0x92, 0x94,
+      |   {     {
+......
+  124 |   0x54, 0x4C, 0x44, 0x54, 0x64, 0xC6, 0x04, 0x00,
+      |                                                 }}
+  125 |   "直", 0x00, 0x04, 0x04, 0xE4, 0xA4, 0xA4, 0xA4, 0xBF,
+      |   {   {
+......
+  128 |   0x4A, 0x4A, 0x4A, 0x7F, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+  129 |   "市", 0x08, 0x08, 0xC8, 0x48, 0x48, 0x48, 0x49, 0xFA,
+      |   {     {
+......
+  132 |   0x00, 0x00, 0x10, 0x20, 0x1F, 0x00, 0x00, 0x00,
+      |                                                 }}
+  133 | 
+  134 |   "报", 0x10, 0x10, 0x10, 0xFF, 0x90, 0x50, 0x00, 0xFE,
+      |   {     {
+......
+  137 |   0x22, 0x14, 0x08, 0x16, 0x21, 0x60, 0x20, 0x00,
+      |                                                 }}
+  138 | 
+  139 |   "警", 0x80, 0x92, 0x8A, 0xBF, 0xAA, 0xBB, 0xCA, 0xFA,
+      |   {     {
+......
+  142 |   0xAA, 0xAA, 0xAA, 0xEA, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+  143 |   "离", 0x04, 0x04, 0x04, 0xF4, 0x04, 0x8C, 0x55, 0x26,
+      |   {     {
+......
+  146 |   0x25, 0x35, 0x25, 0x45, 0x84, 0x7E, 0x04, 0x00,
+      |                                                 }}
+  147 |   "在", 0x08, 0x08, 0x08, 0x08, 0xC8, 0x38, 0x0F, 0x08,
+      |   {     {
+......
+  150 |   0x41, 0x7F, 0x41, 0x41, 0x41, 0x60, 0x40, 0x00,
+      |                                                 }}
+  151 |   "线", 0x00, 0x20, 0x30, 0xAC, 0x63, 0x20, 0x30, 0x20,
+      |   {     {
+......
+  154 |   0x21, 0x17, 0x18, 0x24, 0x42, 0x80, 0xE0, 0x00,
+      |                                                 }}
+  155 |   "模", 0x10, 0x10, 0xD0, 0xFF, 0x94, 0x14, 0xE4, 0xBF,
+      |   {    {
+......
+  158 |   0x2A, 0x1E, 0x2A, 0x2A, 0x4B, 0xC8, 0x48, 0x00,
+      |                                                 }}
+  159 |   "块", 0x20, 0x20, 0x20, 0xFF, 0x20, 0x20, 0x10, 0x10,
+      |   {     {
+......
+  162 |   0x07, 0x0A, 0x12, 0x22, 0x43, 0xC2, 0x42, 0x00,
+      |                                                 }}
+  163 |   "启", 0x00, 0x00, 0x00, 0xFC, 0x44, 0x44, 0x44, 0x45,
+      |   {     {
+......
+  166 |   0x42, 0x42, 0x42, 0x42, 0x42, 0xFF, 0x02, 0x00,
+      |                                                 }}
+  167 |   "用", 0x00, 0x00, 0xFE, 0x22, 0x22, 0x22, 0x22, 0xFE,
+      |   {     {
+......
+  170 |   0x02, 0x02, 0x42, 0x82, 0x7F, 0x00, 0x00, 0x00,
+      |                                                 }}
+  171 |   "屏", 0x00, 0x00, 0xFE, 0x12, 0x92, 0x92, 0xB2, 0xD2,
+      |   {     {
+......
+  174 |   0x04, 0x04, 0xFF, 0x04, 0x04, 0x06, 0x04, 0x00,
+      |                                                 }}
+  175 |   "蔽", 0x04, 0x94, 0xA4, 0x84, 0xF4, 0xCF, 0xA4, 0x94,
+      |   {     {
+......
+  178 |   0x81, 0x40, 0x2F, 0x10, 0x28, 0xC7, 0x40, 0x00,
+      |                                                 }}
+  179 | 
+  180 |   "设", 0x40, 0x40, 0x42, 0xCC, 0x00, 0x40, 0xA0, 0x9F,
+      |   {     {
+......
+  183 |   0x2C, 0x10, 0x28, 0x26, 0x41, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  184 |   "置", 0x00, 0x10, 0x17, 0xD5, 0x55, 0x57, 0x55, 0x7D,
+      |   {     {
+......
+  187 |   0x55, 0x55, 0x55, 0x7F, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+  188 |   "出", 0x00, 0x00, 0xFC, 0x40, 0x40, 0x40, 0x40, 0xFF,
+      |   {     {
+......
+  191 |   0x40, 0x40, 0x40, 0x40, 0x40, 0xFE, 0x00, 0x00,
+      |                                                 }}
+  192 |   "开", 0x80, 0x82, 0x82, 0x82, 0xFE, 0x82, 0x82, 0x82,
+      |   {     {
+......
+  195 |   0x00, 0x00, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+  196 |   "关", 0x00, 0x10, 0x10, 0x11, 0x12, 0x1C, 0x10, 0xF0,
+      |   {     {
+......
+  199 |   0x0D, 0x11, 0x21, 0x21, 0x41, 0xC1, 0x41, 0x00,
+      |                                                 }}
+  200 |   "温", 0x10, 0x22, 0x64, 0x0C, 0x80, 0x00, 0xFE, 0x92,
+      |   {     {
+......
+  203 |   0x7E, 0x42, 0x7E, 0x42, 0x42, 0x7E, 0x40, 0x00,
+      |                                                 }}
+  204 |   "度", 0x00, 0x00, 0xFC, 0x24, 0x24, 0x24, 0xFC, 0xA5,
+      |   {     {
+......
+  207 |   0x12, 0x2A, 0x26, 0x42, 0x40, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  208 |   "℃", 0x00, 0x06, 0x09, 0x09, 0xE6, 0xF0, 0x18, 0x08,
+      |   {     {
+......
+  211 |   0x20, 0x20, 0x20, 0x10, 0x08, 0x00, 0x00, 0x00,
+      |                                                 }}
+  212 |   "退", 0x40, 0x42, 0x44, 0xCC, 0x00, 0x00, 0xFF, 0x49,
+      |   {     {
+......
+  215 |   0x85, 0x81, 0x82, 0x85, 0x88, 0xD8, 0x40, 0x00,
+      |                                                 }}
+  216 |   "电", 0x00, 0xF8, 0x48, 0x48, 0x48, 0x48, 0xFF, 0x48,
+      |   {     {
+......
+  219 |   0x42, 0x42, 0x42, 0x47, 0x40, 0x70, 0x00, 0x00,
+      |                                                 }}
+  220 |   "压", 0x00, 0x00, 0xFE, 0x02, 0x82, 0x82, 0x82, 0x82,
+      |   {    {
+......
+  223 |   0x7F, 0x40, 0x42, 0x44, 0x4C, 0x60, 0x40, 0x00,
+      |                                                 }}
+  224 |   "流", 0x10, 0x22, 0x64, 0x0C, 0x80, 0x44, 0x44, 0x64,
+      |   {     {
+......
+  227 |   0x00, 0xFF, 0x00, 0x3F, 0x40, 0x40, 0x70, 0x00,
+      |                                                 }}
+  228 | 
+  229 |   "查", 0x84, 0x84, 0x44, 0xE4, 0x54, 0x4C, 0x44, 0x7F,
+      |   {     {
+......
+  232 |   0x52, 0x52, 0x52, 0x5F, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+  233 | 
+  234 |   "看", 0x20, 0x2A, 0x2A, 0xAA, 0xEA, 0xBA, 0xAE, 0xAA,
+      |   {     {
+......
+  237 |   0x4A, 0x4A, 0x4A, 0xFF, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+  238 | 
+  239 |   "交", 0x08, 0x08, 0x88, 0x48, 0xB8, 0x08, 0x09, 0x0E,
+      |   {     {
+......
+  242 |   0x0A, 0x11, 0x20, 0x20, 0x40, 0xC0, 0x40, 0x00};
+      |                                                 }}
+arm-none-eabi-gcc -o "tPen.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ProgramPro\TemperatureProject\tPen\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tPen.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: tPen.elf
+ 
+arm-none-eabi-size   tPen.elf 
+arm-none-eabi-objdump -h -S  tPen.elf  > "tPen.list"
+   text	   data	    bss	    dec	    hex	filename
+  34920	    296	   3392	  38608	   96d0	tPen.elf
+Finished building: default.size.stdout
+ 
+Finished building: tPen.list
+ 
+22:25:23 **** Incremental Build of configuration Debug for project tPen ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/ThingsMenuList.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ThingsMenuList.d" -MT"Core/Src/ThingsMenuList.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ThingsMenuList.o"
+In file included from ../Core/Src/ThingsMenuList.c:8:
+../Core/Inc/oledfont.h:9:33: warning: missing braces around initializer [-Wmissing-braces]
+    9 | const unsigned char F6x8[][6] = {
+      |                                 ^
+   10 | 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,// sp
+      | {                                 }
+   11 | 0x00, 0x00, 0x00, 0x2f, 0x00, 0x00,// !
+      | {                                 }
+   12 | 0x00, 0x00, 0x07, 0x00, 0x07, 0x00,// "
+      | {                                 }
+   13 | 0x00, 0x14, 0x7f, 0x14, 0x7f, 0x14,// #
+      | {                                 }
+   14 | 0x00, 0x24, 0x2a, 0x7f, 0x2a, 0x12,// $
+      | {                                 }
+   15 | 0x00, 0x62, 0x64, 0x08, 0x13, 0x23,// %
+      | {                                 }
+   16 | 0x00, 0x36, 0x49, 0x55, 0x22, 0x50,// &
+      | {                                 }
+   17 | 0x00, 0x00, 0x05, 0x03, 0x00, 0x00,// '
+      | {                                 }
+   18 | 0x00, 0x00, 0x1c, 0x22, 0x41, 0x00,// (
+      | {                                 }
+   19 | 0x00, 0x00, 0x41, 0x22, 0x1c, 0x00,// )
+      | {                                 }
+   20 | 0x00, 0x14, 0x08, 0x3E, 0x08, 0x14,// *
+      | {                                 }
+   21 | 0x00, 0x08, 0x08, 0x3E, 0x08, 0x08,// +
+      | {                                 }
+   22 | 0x00, 0x00, 0x00, 0xA0, 0x60, 0x00,// ,
+      | {                                 }
+   23 | 0x00, 0x08, 0x08, 0x08, 0x08, 0x08,// -
+      | {                                 }
+   24 | 0x00, 0x00, 0x60, 0x60, 0x00, 0x00,// .
+      | {                                 }
+   25 | 0x00, 0x20, 0x10, 0x08, 0x04, 0x02,// /
+      | {                                 }
+   26 | 0x00, 0x3E, 0x51, 0x49, 0x45, 0x3E,// 0
+      | {                                 }
+   27 | 0x00, 0x00, 0x42, 0x7F, 0x40, 0x00,// 1
+      | {                                 }
+   28 | 0x00, 0x42, 0x61, 0x51, 0x49, 0x46,// 2
+      | {                                 }
+   29 | 0x00, 0x21, 0x41, 0x45, 0x4B, 0x31,// 3
+      | {                                 }
+   30 | 0x00, 0x18, 0x14, 0x12, 0x7F, 0x10,// 4
+      | {                                 }
+   31 | 0x00, 0x27, 0x45, 0x45, 0x45, 0x39,// 5
+      | {                                 }
+   32 | 0x00, 0x3C, 0x4A, 0x49, 0x49, 0x30,// 6
+      | {                                 }
+   33 | 0x00, 0x01, 0x71, 0x09, 0x05, 0x03,// 7
+      | {                                 }
+   34 | 0x00, 0x36, 0x49, 0x49, 0x49, 0x36,// 8
+      | {                                 }
+   35 | 0x00, 0x06, 0x49, 0x49, 0x29, 0x1E,// 9
+      | {                                 }
+   36 | 0x00, 0x00, 0x36, 0x36, 0x00, 0x00,// :
+      | {                                 }
+   37 | 0x00, 0x00, 0x56, 0x36, 0x00, 0x00,// ;
+      | {                                 }
+   38 | 0x00, 0x08, 0x14, 0x22, 0x41, 0x00,// <
+      | {                                 }
+   39 | 0x00, 0x14, 0x14, 0x14, 0x14, 0x14,// =
+      | {                                 }
+   40 | 0x00, 0x00, 0x41, 0x22, 0x14, 0x08,// >
+      | {                                 }
+   41 | 0x00, 0x02, 0x01, 0x51, 0x09, 0x06,// ?
+      | {                                 }
+   42 | 0x00, 0x32, 0x49, 0x59, 0x51, 0x3E,// @
+      | {                                 }
+   43 | 0x00, 0x7C, 0x12, 0x11, 0x12, 0x7C,// A
+      | {                                 }
+   44 | 0x00, 0x7F, 0x49, 0x49, 0x49, 0x36,// B
+      | {                                 }
+   45 | 0x00, 0x3E, 0x41, 0x41, 0x41, 0x22,// C
+      | {                                 }
+   46 | 0x00, 0x7F, 0x41, 0x41, 0x22, 0x1C,// D
+      | {                                 }
+   47 | 0x00, 0x7F, 0x49, 0x49, 0x49, 0x41,// E
+      | {                                 }
+   48 | 0x00, 0x7F, 0x09, 0x09, 0x09, 0x01,// F
+      | {                                 }
+   49 | 0x00, 0x3E, 0x41, 0x49, 0x49, 0x7A,// G
+      | {                                 }
+   50 | 0x00, 0x7F, 0x08, 0x08, 0x08, 0x7F,// H
+      | {                                 }
+   51 | 0x00, 0x00, 0x41, 0x7F, 0x41, 0x00,// I
+      | {                                 }
+   52 | 0x00, 0x20, 0x40, 0x41, 0x3F, 0x01,// J
+      | {                                 }
+   53 | 0x00, 0x7F, 0x08, 0x14, 0x22, 0x41,// K
+      | {                                 }
+   54 | 0x00, 0x7F, 0x40, 0x40, 0x40, 0x40,// L
+      | {                                 }
+   55 | 0x00, 0x7F, 0x02, 0x0C, 0x02, 0x7F,// M
+      | {                                 }
+   56 | 0x00, 0x7F, 0x04, 0x08, 0x10, 0x7F,// N
+      | {                                 }
+   57 | 0x00, 0x3E, 0x41, 0x41, 0x41, 0x3E,// O
+      | {                                 }
+   58 | 0x00, 0x7F, 0x09, 0x09, 0x09, 0x06,// P
+      | {                                 }
+   59 | 0x00, 0x3E, 0x41, 0x51, 0x21, 0x5E,// Q
+      | {                                 }
+   60 | 0x00, 0x7F, 0x09, 0x19, 0x29, 0x46,// R
+      | {                                 }
+   61 | 0x00, 0x46, 0x49, 0x49, 0x49, 0x31,// S
+      | {                                 }
+   62 | 0x00, 0x01, 0x01, 0x7F, 0x01, 0x01,// T
+      | {                                 }
+   63 | 0x00, 0x3F, 0x40, 0x40, 0x40, 0x3F,// U
+      | {                                 }
+   64 | 0x00, 0x1F, 0x20, 0x40, 0x20, 0x1F,// V
+      | {                                 }
+   65 | 0x00, 0x3F, 0x40, 0x38, 0x40, 0x3F,// W
+      | {                                 }
+   66 | 0x00, 0x63, 0x14, 0x08, 0x14, 0x63,// X
+      | {                                 }
+   67 | 0x00, 0x07, 0x08, 0x70, 0x08, 0x07,// Y
+      | {                                 }
+   68 | 0x00, 0x61, 0x51, 0x49, 0x45, 0x43,// Z
+      | {                                 }
+   69 | 0x00, 0x00, 0x7F, 0x41, 0x41, 0x00,// [
+      | {                                 }
+   70 | 0x00, 0x55, 0x2A, 0x55, 0x2A, 0x55,// 55
+      | {                                 }
+   71 | 0x00, 0x00, 0x41, 0x41, 0x7F, 0x00,// ]
+      | {                                 }
+   72 | 0x00, 0x04, 0x02, 0x01, 0x02, 0x04,// ^
+      | {                                 }
+   73 | 0x00, 0x40, 0x40, 0x40, 0x40, 0x40,// _
+      | {                                 }
+   74 | 0x00, 0x00, 0x01, 0x02, 0x04, 0x00,// '
+      | {                                 }
+   75 | 0x00, 0x20, 0x54, 0x54, 0x54, 0x78,// a
+      | {                                 }
+   76 | 0x00, 0x7F, 0x48, 0x44, 0x44, 0x38,// b
+      | {                                 }
+   77 | 0x00, 0x38, 0x44, 0x44, 0x44, 0x20,// c
+      | {                                 }
+   78 | 0x00, 0x38, 0x44, 0x44, 0x48, 0x7F,// d
+      | {                                 }
+   79 | 0x00, 0x38, 0x54, 0x54, 0x54, 0x18,// e
+      | {                                 }
+   80 | 0x00, 0x08, 0x7E, 0x09, 0x01, 0x02,// f
+      | {                                 }
+   81 | 0x00, 0x18, 0xA4, 0xA4, 0xA4, 0x7C,// g
+      | {                                 }
+   82 | 0x00, 0x7F, 0x08, 0x04, 0x04, 0x78,// h
+      | {                                 }
+   83 | 0x00, 0x00, 0x44, 0x7D, 0x40, 0x00,// i
+      | {                                 }
+   84 | 0x00, 0x40, 0x80, 0x84, 0x7D, 0x00,// j
+      | {                                 }
+   85 | 0x00, 0x7F, 0x10, 0x28, 0x44, 0x00,// k
+      | {                                 }
+   86 | 0x00, 0x00, 0x41, 0x7F, 0x40, 0x00,// l
+      | {                                 }
+   87 | 0x00, 0x7C, 0x04, 0x18, 0x04, 0x78,// m
+      | {                                 }
+   88 | 0x00, 0x7C, 0x08, 0x04, 0x04, 0x78,// n
+      | {                                 }
+   89 | 0x00, 0x38, 0x44, 0x44, 0x44, 0x38,// o
+      | {                                 }
+   90 | 0x00, 0xFC, 0x24, 0x24, 0x24, 0x18,// p
+      | {                                 }
+   91 | 0x00, 0x18, 0x24, 0x24, 0x18, 0xFC,// q
+      | {                                 }
+   92 | 0x00, 0x7C, 0x08, 0x04, 0x04, 0x08,// r
+      | {                                 }
+   93 | 0x00, 0x48, 0x54, 0x54, 0x54, 0x20,// s
+      | {                                 }
+   94 | 0x00, 0x04, 0x3F, 0x44, 0x40, 0x20,// t
+      | {                                 }
+   95 | 0x00, 0x3C, 0x40, 0x40, 0x20, 0x7C,// u
+      | {                                 }
+   96 | 0x00, 0x1C, 0x20, 0x40, 0x20, 0x1C,// v
+      | {                                 }
+   97 | 0x00, 0x3C, 0x40, 0x30, 0x40, 0x3C,// w
+      | {                                 }
+   98 | 0x00, 0x44, 0x28, 0x10, 0x28, 0x44,// x
+      | {                                 }
+   99 | 0x00, 0x1C, 0xA0, 0xA0, 0xA0, 0x7C,// y
+      | {                                 }
+  100 | 0x00, 0x44, 0x64, 0x54, 0x4C, 0x44,// z
+      | {                                 }
+  101 | 0x14, 0x14, 0x14, 0x14, 0x14, 0x14// horiz lines
+      | {
+  102 | };
+      | }
+../Core/Src/ThingsMenuList.c:10:21: warning: missing braces around initializer [-Wmissing-braces]
+   10 | const GBX16 Hzk[] = {
+      |                     ^
+   11 |   "正", 0x00, 0x02, 0x02, 0xC2, 0x02, 0x02, 0x02, 0xFE,
+      |   {     {
+......
+   14 |   0x40, 0x40, 0x40, 0x40, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+   15 | 
+   16 |   "常", 0x20, 0x18, 0x08, 0x0A, 0xEC, 0xA8, 0xA8, 0xAF,
+      |   {     {
+......
+   19 |   0x02, 0x22, 0x42, 0x3F, 0x02, 0x00, 0x00, 0x00,
+      |                                                 }}
+   20 | 
+   21 |   "错", 0x80, 0x40, 0x70, 0xCF, 0x48, 0x48, 0x48, 0x48,
+      |   {     {
+......
+   24 |   0x49, 0x49, 0x49, 0x49, 0xFF, 0x01, 0x00, 0x00,
+      |                                                 }}
+   25 | 
+   26 |   "误", 0x40, 0x42, 0xC4, 0x0C, 0x00, 0x40, 0x5E, 0x52,
+      |   {     {
+......
+   29 |   0x1A, 0x07, 0x1A, 0x22, 0x42, 0xC3, 0x42, 0x00,
+      |                                                 }}
+   30 |   "运", 0x40, 0x42, 0x44, 0xCC, 0x00, 0x20, 0x22, 0x22,
+      |   {     {
+......
+   33 |   0x48, 0x48, 0x4A, 0x4C, 0x58, 0x60, 0x20, 0x00,
+      |                                                 }}
+   34 | 
+   35 |   "行", 0x00, 0x10, 0x88, 0xC4, 0x23, 0x40, 0x42, 0x42,
+      |   {     {
+......
+   38 |   0x00, 0x40, 0x80, 0x7F, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+   39 | 
+   40 |   "状", 0x00, 0x08, 0x30, 0x00, 0xFF, 0x20, 0x20, 0x20,
+      |   {    {
+......
+   43 |   0x03, 0x00, 0x03, 0x0C, 0x30, 0x60, 0x20, 0x00,
+      |                                                 }}
+   44 | 
+   45 |   "态", 0x04, 0x04, 0x84, 0x84, 0x44, 0x24, 0x54, 0x8F,
+      |   {   {
+......
+   48 |   0x40, 0x40, 0x70, 0x04, 0x08, 0x31, 0x00, 0x00,
+      |                                                 }}
+   49 |   "模", 0x10, 0x10, 0xD0, 0xFF, 0x94, 0x14, 0xE4, 0xBF,
+      |   {    {
+......
+   52 |   0x2A, 0x1E, 0x2A, 0x2A, 0x4B, 0xC8, 0x48, 0x00,
+      |                                                 }}
+   53 | 
+   54 |   "块", 0x20, 0x20, 0x20, 0xFF, 0x20, 0x20, 0x10, 0x10,
+      |   {     {
+......
+   57 |   0x07, 0x0A, 0x12, 0x22, 0x43, 0xC2, 0x42, 0x00,
+      |                                                 }}
+   58 | 
+   59 |   "数", 0x10, 0x92, 0x54, 0x30, 0xFF, 0x50, 0x94, 0x32,
+      |   {     {
+......
+   62 |   0x23, 0x14, 0x08, 0x16, 0x61, 0xC0, 0x40, 0x00,
+      |                                                 }}
+   63 |   "校", 0x10, 0x10, 0xD0, 0xFF, 0x90, 0x10, 0x88, 0x48,
+      |   {    {
+......
+   66 |   0x21, 0x16, 0x08, 0x16, 0x61, 0xC0, 0x40, 0x00,
+      |                                                 }}
+   67 | 
+   68 |   "准", 0x00, 0x02, 0x04, 0xEC, 0x40, 0x20, 0xF8, 0x4F,
+      |   {    {
+......
+   71 |   0x22, 0x22, 0x3F, 0x22, 0x23, 0x32, 0x20, 0x00,
+      |                                                 }}
+   72 | 
+   73 |   "波", 0x20, 0x42, 0x04, 0x0C, 0x80, 0xF8, 0x88, 0x88,
+      |   {     {
+......
+   76 |   0x14, 0x08, 0x14, 0x22, 0x41, 0xC0, 0x40, 0x00,
+      |                                                 }}
+   77 | 
+   78 |   "特", 0x20, 0x1C, 0x10, 0xFF, 0x90, 0x50, 0x48, 0x48,
+      |   {     {
+......
+   81 |   0x1A, 0x42, 0x82, 0x7F, 0x02, 0x03, 0x02, 0x00,
+      |                                                 }}
+   82 | 
+   83 |   "率", 0x00, 0x14, 0xA4, 0x44, 0x04, 0x24, 0xB5, 0x6E,
+      |   {     {
+......
+   86 |   0x09, 0x09, 0x0B, 0x08, 0x08, 0x0D, 0x08, 0x00,
+      |                                                 }}
+   87 | 
+   88 |   "地", 0x40, 0x40, 0xFE, 0x40, 0x40, 0x80, 0xFC, 0x40,
+      |   {     {
+......
+   91 |   0x40, 0x5F, 0x44, 0x48, 0x47, 0x40, 0x70, 0x00,
+      |                                                 }}
+   92 | 
+   93 |   "址", 0x10, 0x10, 0x10, 0xFF, 0x10, 0x18, 0x10, 0xF8,
+      |   {   {
+......
+   96 |   0x40, 0x40, 0x7F, 0x40, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+   97 |   "过", 0x40, 0x42, 0x44, 0xC8, 0x00, 0x08, 0x08, 0x48,
+      |   {     {
+......
+  100 |   0x41, 0x48, 0x50, 0x4F, 0x40, 0x60, 0x20, 0x00,
+      |                                                 }}
+  101 | 
+  102 |   "触", 0x20, 0xF8, 0x27, 0xF4, 0x2C, 0xE4, 0x00, 0xF0,
+      |   {     {
+......
+  105 |   0xC4, 0x44, 0x7F, 0x24, 0x34, 0x27, 0xC0, 0x00,
+      |                                                 }}
+  106 | 
+  107 |   "发", 0x00, 0x10, 0x18, 0x16, 0x10, 0x90, 0xF0, 0x9F,
+      |   {     {
+......
+  110 |   0x08, 0x14, 0x22, 0x21, 0x40, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  111 |   "欠", 0x80, 0x40, 0x20, 0x18, 0x0F, 0x08, 0x08, 0xE8,
+      |   {    {
+......
+  114 |   0x03, 0x0C, 0x10, 0x20, 0x40, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  115 | 
+  116 |   "补", 0x10, 0x10, 0x10, 0x11, 0xD6, 0x30, 0x98, 0x00,
+      |   {     {
+......
+  119 |   0x00, 0xFF, 0x00, 0x00, 0x01, 0x03, 0x00, 0x00,
+      |                                                 }}
+  120 | 
+  121 |   "偿", 0x80, 0x40, 0x20, 0xF8, 0x47, 0x30, 0x92, 0x94,
+      |   {     {
+......
+  124 |   0x54, 0x4C, 0x44, 0x54, 0x64, 0xC6, 0x04, 0x00,
+      |                                                 }}
+  125 |   "直", 0x00, 0x04, 0x04, 0xE4, 0xA4, 0xA4, 0xA4, 0xBF,
+      |   {   {
+......
+  128 |   0x4A, 0x4A, 0x4A, 0x7F, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+  129 |   "市", 0x08, 0x08, 0xC8, 0x48, 0x48, 0x48, 0x49, 0xFA,
+      |   {     {
+......
+  132 |   0x00, 0x00, 0x10, 0x20, 0x1F, 0x00, 0x00, 0x00,
+      |                                                 }}
+  133 | 
+  134 |   "报", 0x10, 0x10, 0x10, 0xFF, 0x90, 0x50, 0x00, 0xFE,
+      |   {     {
+......
+  137 |   0x22, 0x14, 0x08, 0x16, 0x21, 0x60, 0x20, 0x00,
+      |                                                 }}
+  138 | 
+  139 |   "警", 0x80, 0x92, 0x8A, 0xBF, 0xAA, 0xBB, 0xCA, 0xFA,
+      |   {     {
+......
+  142 |   0xAA, 0xAA, 0xAA, 0xEA, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+  143 |   "离", 0x04, 0x04, 0x04, 0xF4, 0x04, 0x8C, 0x55, 0x26,
+      |   {     {
+......
+  146 |   0x25, 0x35, 0x25, 0x45, 0x84, 0x7E, 0x04, 0x00,
+      |                                                 }}
+  147 |   "在", 0x08, 0x08, 0x08, 0x08, 0xC8, 0x38, 0x0F, 0x08,
+      |   {     {
+......
+  150 |   0x41, 0x7F, 0x41, 0x41, 0x41, 0x60, 0x40, 0x00,
+      |                                                 }}
+  151 |   "线", 0x00, 0x20, 0x30, 0xAC, 0x63, 0x20, 0x30, 0x20,
+      |   {     {
+......
+  154 |   0x21, 0x17, 0x18, 0x24, 0x42, 0x80, 0xE0, 0x00,
+      |                                                 }}
+  155 |   "模", 0x10, 0x10, 0xD0, 0xFF, 0x94, 0x14, 0xE4, 0xBF,
+      |   {    {
+......
+  158 |   0x2A, 0x1E, 0x2A, 0x2A, 0x4B, 0xC8, 0x48, 0x00,
+      |                                                 }}
+  159 |   "块", 0x20, 0x20, 0x20, 0xFF, 0x20, 0x20, 0x10, 0x10,
+      |   {     {
+......
+  162 |   0x07, 0x0A, 0x12, 0x22, 0x43, 0xC2, 0x42, 0x00,
+      |                                                 }}
+  163 |   "启", 0x00, 0x00, 0x00, 0xFC, 0x44, 0x44, 0x44, 0x45,
+      |   {     {
+......
+  166 |   0x42, 0x42, 0x42, 0x42, 0x42, 0xFF, 0x02, 0x00,
+      |                                                 }}
+  167 |   "用", 0x00, 0x00, 0xFE, 0x22, 0x22, 0x22, 0x22, 0xFE,
+      |   {     {
+......
+  170 |   0x02, 0x02, 0x42, 0x82, 0x7F, 0x00, 0x00, 0x00,
+      |                                                 }}
+  171 |   "屏", 0x00, 0x00, 0xFE, 0x12, 0x92, 0x92, 0xB2, 0xD2,
+      |   {     {
+......
+  174 |   0x04, 0x04, 0xFF, 0x04, 0x04, 0x06, 0x04, 0x00,
+      |                                                 }}
+  175 |   "蔽", 0x04, 0x94, 0xA4, 0x84, 0xF4, 0xCF, 0xA4, 0x94,
+      |   {     {
+......
+  178 |   0x81, 0x40, 0x2F, 0x10, 0x28, 0xC7, 0x40, 0x00,
+      |                                                 }}
+  179 | 
+  180 |   "设", 0x40, 0x40, 0x42, 0xCC, 0x00, 0x40, 0xA0, 0x9F,
+      |   {     {
+......
+  183 |   0x2C, 0x10, 0x28, 0x26, 0x41, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  184 |   "置", 0x00, 0x10, 0x17, 0xD5, 0x55, 0x57, 0x55, 0x7D,
+      |   {     {
+......
+  187 |   0x55, 0x55, 0x55, 0x7F, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+  188 |   "出", 0x00, 0x00, 0xFC, 0x40, 0x40, 0x40, 0x40, 0xFF,
+      |   {     {
+......
+  191 |   0x40, 0x40, 0x40, 0x40, 0x40, 0xFE, 0x00, 0x00,
+      |                                                 }}
+  192 |   "开", 0x80, 0x82, 0x82, 0x82, 0xFE, 0x82, 0x82, 0x82,
+      |   {     {
+......
+  195 |   0x00, 0x00, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+  196 |   "关", 0x00, 0x10, 0x10, 0x11, 0x12, 0x1C, 0x10, 0xF0,
+      |   {     {
+......
+  199 |   0x0D, 0x11, 0x21, 0x21, 0x41, 0xC1, 0x41, 0x00,
+      |                                                 }}
+  200 |   "温", 0x10, 0x22, 0x64, 0x0C, 0x80, 0x00, 0xFE, 0x92,
+      |   {     {
+......
+  203 |   0x7E, 0x42, 0x7E, 0x42, 0x42, 0x7E, 0x40, 0x00,
+      |                                                 }}
+  204 |   "度", 0x00, 0x00, 0xFC, 0x24, 0x24, 0x24, 0xFC, 0xA5,
+      |   {     {
+......
+  207 |   0x12, 0x2A, 0x26, 0x42, 0x40, 0xC0, 0x40, 0x00,
+      |                                                 }}
+  208 |   "℃", 0x00, 0x06, 0x09, 0x09, 0xE6, 0xF0, 0x18, 0x08,
+      |   {     {
+......
+  211 |   0x20, 0x20, 0x20, 0x10, 0x08, 0x00, 0x00, 0x00,
+      |                                                 }}
+  212 |   "退", 0x40, 0x42, 0x44, 0xCC, 0x00, 0x00, 0xFF, 0x49,
+      |   {     {
+......
+  215 |   0x85, 0x81, 0x82, 0x85, 0x88, 0xD8, 0x40, 0x00,
+      |                                                 }}
+  216 |   "电", 0x00, 0xF8, 0x48, 0x48, 0x48, 0x48, 0xFF, 0x48,
+      |   {     {
+......
+  219 |   0x42, 0x42, 0x42, 0x47, 0x40, 0x70, 0x00, 0x00,
+      |                                                 }}
+  220 |   "压", 0x00, 0x00, 0xFE, 0x02, 0x82, 0x82, 0x82, 0x82,
+      |   {    {
+......
+  223 |   0x7F, 0x40, 0x42, 0x44, 0x4C, 0x60, 0x40, 0x00,
+      |                                                 }}
+  224 |   "流", 0x10, 0x22, 0x64, 0x0C, 0x80, 0x44, 0x44, 0x64,
+      |   {     {
+......
+  227 |   0x00, 0xFF, 0x00, 0x3F, 0x40, 0x40, 0x70, 0x00,
+      |                                                 }}
+  228 | 
+  229 |   "查", 0x84, 0x84, 0x44, 0xE4, 0x54, 0x4C, 0x44, 0x7F,
+      |   {     {
+......
+  232 |   0x52, 0x52, 0x52, 0x5F, 0x40, 0x60, 0x40, 0x00,
+      |                                                 }}
+  233 | 
+  234 |   "看", 0x20, 0x2A, 0x2A, 0xAA, 0xEA, 0xBA, 0xAE, 0xAA,
+      |   {     {
+......
+  237 |   0x4A, 0x4A, 0x4A, 0xFF, 0x00, 0x00, 0x00, 0x00,
+      |                                                 }}
+  238 | 
+  239 |   "交", 0x08, 0x08, 0x88, 0x48, 0xB8, 0x08, 0x09, 0x0E,
+      |   {     {
+......
+  242 |   0x0A, 0x11, 0x20, 0x20, 0x40, 0xC0, 0x40, 0x00};
+      |                                                 }}
+arm-none-eabi-gcc -o "tPen.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ProgramPro\TemperatureProject\tPen\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tPen.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: tPen.elf
+ 
+arm-none-eabi-size   tPen.elf 
+arm-none-eabi-objdump -h -S  tPen.elf  > "tPen.list"
+   text	   data	    bss	    dec	    hex	filename
+  34920	    296	   3392	  38608	   96d0	tPen.elf
+Finished building: default.size.stdout
+ 
+Finished building: tPen.list
+ 
+22:27:27 **** Incremental Build of configuration Debug for project tPen ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/ThingsList.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ThingsList.d" -MT"Core/Src/ThingsList.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ThingsList.o"
+arm-none-eabi-gcc "../Core/Src/ThingsTOS.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ThingsTOS.d" -MT"Core/Src/ThingsTOS.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ThingsTOS.o"
+arm-none-eabi-gcc -o "tPen.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ProgramPro\TemperatureProject\tPen\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tPen.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: tPen.elf
+ 
+arm-none-eabi-size   tPen.elf 
+arm-none-eabi-objdump -h -S  tPen.elf  > "tPen.list"
+   text	   data	    bss	    dec	    hex	filename
+  34920	    296	   3392	  38608	   96d0	tPen.elf
+Finished building: default.size.stdout
+ 
+Finished building: tPen.list
+ 

@@ -1,0 +1,18 @@
+22:27:27 **** Incremental Build of configuration Debug for project tPen ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/ThingsList.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ThingsList.d" -MT"Core/Src/ThingsList.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ThingsList.o"
+arm-none-eabi-gcc "../Core/Src/ThingsTOS.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ThingsTOS.d" -MT"Core/Src/ThingsTOS.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ThingsTOS.o"
+arm-none-eabi-gcc -o "tPen.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\ProgramPro\TemperatureProject\tPen\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tPen.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: tPen.elf
+ 
+arm-none-eabi-size   tPen.elf 
+arm-none-eabi-objdump -h -S  tPen.elf  > "tPen.list"
+   text	   data	    bss	    dec	    hex	filename
+  34920	    296	   3392	  38608	   96d0	tPen.elf
+Finished building: default.size.stdout
+ 
+Finished building: tPen.list
+ 
+
+22:27:28 Build Finished. 0 errors, 0 warnings. (took 777ms)
+

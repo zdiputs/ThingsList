@@ -1,0 +1,42 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/EWARM/tPen/Exe/tPen.out",
+            "name": "Debug with ST-Link",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "servertype": "stlink"
+        },
+        {
+            "name": "jlinkgdb",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/EWARM/tPen/Exe/tPen.out",
+            "stopAtEntry": true,
+            "cwd": "${workspaceRoot}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/11.2 2022.02/bin/arm-none-eabi-gdb.exe",
+            "debugServerPath": "C:/Program Files/SEGGER/JLink/JLinkGDBServerCL.exe",
+            "debugServerArgs": "-if swd -singlerun -strict -endian little -speed auto -port 5000 -device STM32FXXXXX -vd -strict -halt",
+            "serverStarted": "Connected\\ to\\ target",
+            "serverLaunchTimeout": 5000,
+            "filterStderr": false,
+            "filterStdout": true,
+            "setupCommands": [
+              {"text": "target remote localhost:5000"},
+              {"text": "monitor flash breakpoints = 1"},
+              {"text": "monitor flash download = 1"},
+              {"text": "monitor reset"},
+              {"text": "load ${workspaceRoot}/EWARM/tPen/Exe/tPen.out"},
+              {"text": "monitor reset"}]
+        }]
+    
+}
