@@ -22,8 +22,8 @@
 ### 打开方式
 
 - MCU STM32F401CCU6
-- [STM32CubeIDE Version: 1.9.0：./ThingsLonedemo/.project](./ThingsLonedemo/.project)
-- [iar 9.10.2 工程文件：./ThingsLonedemo/EWARM/Project.eww](./ThingsLonedemo/EWARM/Project.eww)
+- [STM32CubeIDE Version: 1.9.0：./ThingsLpiddemo/.project](./ThingsLpiddemo/.project)
+- [iar 9.10.2 工程文件：./ThingsLpiddemo/EWARM/tPen.eww](./ThingsLpiddemo/EWARM/tPen.eww)
 - [电路原理图：./ThingsLpcb/tPen.pdf](./ThingsLpcb/tPen.pdf)
-- [主要代码：./ThingsLonedemo/Core/Src/ThingsL.c](./ThingsLonedemo/Core/Src/ThingsL.c)
+- [代码：./ThingsList.c](./ThingsList.c)
 

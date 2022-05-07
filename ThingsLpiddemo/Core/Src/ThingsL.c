@@ -20,8 +20,8 @@ https:stgui.com   https://gitee.com/diputs
 #include "ThingsL.h"
 #include "ThingsLA.h"//事情A的包含
 #include "ThingsLB.h"//事情B的包含
-#include "ThingsPid.h"//事情C的包含 这里是pid的示例
-
+#include "ThingsLCPid.h"//事情C的包含 这里是pid的示例
+#include "ThingsLDTopic.h"
 
 ThingsL_PER_FRAME ThingsL_List[ThingsL_perNum];           //事情列表声明
 signed short ThingsL_perGeneralSch(unsigned char i, signed short Config, signed int Stay);//通用调度器
@@ -30,9 +30,10 @@ signed short ThingsL_perGeneralSch(unsigned char i, signed short Config, signed 
 //事情列表：是整件[大事]
 ThingsL_PER_FRAME ThingsL_List[ThingsL_perNum] =
 {
-  {"事情A",1, 1, 0, ThingsL_perGeneralSch,&ThingsL_ListListA[0],&tingsA_runData},//一行记录与一件事情对应
-  {"事情B",1, 1, 0, ThingsL_perGeneralSch,&ThingsL_ListListB[0],&tingsB_runData},//一行记录与一件事情对应
-  {"PID控",1, 1, 0, ThingsL_perGeneralSch,&ThingsL_ListListC[0],&tingsC_runData}//一行记录与一件事情对应
+  {"事情A",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListA[0],&tingsA_runData},//一行记录与一件事情对应
+  {"事情B",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListB[0],&tingsB_runData},//一行记录与一件事情对应
+  {"PID控",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListC[0],&tingsC_runData},//一行记录与一件事情对应
+  {"PID控",1, JumpS0, -1,ThingsL_perGeneralSch,&ThingsL_ListListD[0],&tingsC_runData}//一行记录与一件事情对应
 };
 
 
@@ -103,6 +104,10 @@ signed short ThingsL_perGeneralSch(unsigned char i, signed short Config, signed 
     ThingsL_MTimeCnt=0;
     ThingsL_StepSegFlag=STEP_1;
     stayleftright=ThingsL_StepPreFunc;//执行预处理函数并取得其返回值
+    if(ThingsL_StepSegMod==STEP_PRE)
+    {
+      ThingsL_StepSegFlag=STEP_0;
+    }
     if(stayleftright==JumpOver)//获取预处理函数的返回值
     {
       ThingsL_MState=ThingsL_StepLeftNextIndex;

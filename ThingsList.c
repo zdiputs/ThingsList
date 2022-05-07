@@ -62,10 +62,31 @@
 //------------------------------步骤List 事情里面的步骤-------------------------------
 typedef enum Jumptype
 {
-  JumpStay=0,   //驻留     具体步骤环节函数返回0时
+  JumpStay=-4,   //驻留     具体步骤环节函数返回0时
   JumpLeft,     //向左跳转 具体步骤环节函数返回1时  
   JumpRight,    //向右跳转 具体步骤环节函数返回2时 另外一个方向
   JumpOver,     //跳过定时环节函数
+  JumpS0,
+  JumpS1,
+  JumpS2,
+  JumpS3,
+  JumpS4,
+  JumpS5,
+  JumpS6,
+  JumpS7,
+  JumpS8,
+  JumpS9,
+  JumpS10,
+  JumpS11,
+  JumpS12,
+  JumpS13,
+  JumpS14,
+  JumpS15,
+  JumpS16,
+  JumpS17,
+  JumpS18,
+  JumpS19,
+  JumpS20,
 } JUMPTYPE;
 typedef enum STEP//一步骤下的环节模式
 {
@@ -143,8 +164,8 @@ JUMPTYPE funcStepB3Jue(void * ThingsL_perSteprun){return JumpLeft;}
 //事情列表：是整件[大事]
 ThingsL_PER_FRAME ThingsL_List[ThingsL_perNum] =
 {
-  {"事情A",1, 1, 0, ThingsL_perGeneralSch,&ThingsL_ListListA[0],&tingsA_runData},//一行记录与一件事情对应
-  {"事情B",1, 1, 0, ThingsL_perGeneralSch,&ThingsL_ListListB[0],&tingsB_runData}//一行记录与一件事情对应
+  {"事情A",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListA[0],&tingsA_runData},//一行记录与一件事情对应
+  {"事情B",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListB[0],&tingsB_runData}//一行记录与一件事情对应
 };
 
 // A事情中 的3行记录分别是三个步骤
@@ -222,19 +243,29 @@ signed short ThingsL_perGeneralSch(unsigned char i, signed short Config, signed 
     return ThingsL_StopSwitchCode; //暂停switch 不需要进行进switch case了
   }
   j = ThingsL_MState;//获取步骤号  一件事情的状态号就是步骤列表的运行序号j
-
+  
   //预处理 环节
   //步骤中的定义不是只运行
   if(ThingsL_StepSegMod!=STEP_POLL&&ThingsL_StepSegFlag==STEP_0)//不是只运行Poll函数   步骤环节标志还是初始值只运行一
   {
     ThingsL_MTimeCnt=0;
     ThingsL_StepSegFlag=STEP_1;
-    if(ThingsL_StepPreFunc==JumpOver)//获取预处理函数的返回值  
+    stayleftright=ThingsL_StepPreFunc;//执行预处理函数并取得其返回值
+    if(ThingsL_StepSegMod==STEP_PRE)//如果是只运行预处理函数就把这个Flag恢复成STEP_0
+    {
+      ThingsL_StepSegFlag=STEP_0;
+    }
+    if(stayleftright==JumpOver)//获取预处理函数的返回值
     {
       ThingsL_MState=ThingsL_StepLeftNextIndex;
       ThingsL_StepSegFlag = STEP_0;//使得定时函数也不会运行
     }
-    
+    if(stayleftright>=0)//函数返回>=0则直接按返回值跳转
+    {
+      ThingsL_MState=stayleftright;
+      ThingsL_StepSegFlag = STEP_0;//使得定时函数也不会运行
+      
+    }
   }
   
   //定时处理环节
@@ -247,8 +278,14 @@ signed short ThingsL_perGeneralSch(unsigned char i, signed short Config, signed 
       ThingsL_MTimeCnt=0;
       ThingsL_PollNumSelfSub;
       stayleftright=ThingsL_StepPollFunc;//执行定时回调函数
-      if(stayleftright&&ThingsL_JumpIsEn) //非驻留住跳转到下一个步骤  
+      if((stayleftright!=JumpStay)&&ThingsL_JumpIsEn) //非驻留住跳转到下一个步骤
       {
+        if(stayleftright>=0)
+        {
+          ThingsL_StepSegFlag=STEP_0;//复位步骤环节标志
+          ThingsL_MState=stayleftright;//函数返回值是正数的话直接把函数返回值当作序号进行调准
+          return Config;
+        }else{//函数返回值是负数的话则根据预设的序号进行跳转
           ThingsL_StepSegFlag=STEP_0;//复位步骤环节标志
           if(stayleftright==JumpLeft)//向左边跳转
           {
@@ -257,6 +294,7 @@ signed short ThingsL_perGeneralSch(unsigned char i, signed short Config, signed 
           {
             ThingsL_MState=ThingsL_StepRightNextIndex;//更到下一个步骤 事情的状态值改变
           }
+        }
       }
     }
   }

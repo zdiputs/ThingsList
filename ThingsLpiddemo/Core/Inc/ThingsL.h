@@ -55,7 +55,7 @@
   [步骤5预处理环节]  /___
   [步骤5定时处理环节]____|循环执行某一个步骤中的定时回调函数表示“驻留”JumpStay
 ****************************************************************************************************************************************/
-#define ThingsL_perNum 3    //事情数
+#define ThingsL_perNum 4    //事情数
 #define ListListANum 3 //事情里面的步骤数
 #define ListListBNum 3 //事情里面的步骤数
 
@@ -105,7 +105,7 @@ typedef struct listsTaskFrame//步骤
   const char *title;           //步骤的标题 在外部调用的时候可以查找匹配的字符串找出步骤列表中的序号
   STEPS  StepSegMod;           //步骤环节预设的三种模式 第一种只运行预处理函数，第二种只运行定时函数，第三种先运行预处理函数再运行定时函数
   STEPSTA StepSegFlag;           //一个步骤分成3个环节,步骤运行在哪个环节的状态
-  unsigned int internalCntMax; //一个步骤分成3个环节,步骤运行在哪个环节的状态
+  signed int internalCntMax;   //一个步骤分成3个环节,步骤运行在哪个环节的状态
   unsigned short nextleftIndex;    //下一状态序号 默认的下一状态JumpIndexFun会具体判断
   unsigned short nextrightIndex;    //下一状态序号 默认的下一状态JumpIndexFun会具体判断
   JUMPTYPE (*funStepPre)(void *);//每个步骤的预处理函数  返回JumpOver时意味着跳过定时函数直接运行左跳转状态，返回其他时按预处理一下后再执行定时
@@ -118,7 +118,7 @@ typedef struct ThingsL_perFrame//事情
   char *text;              //一般可以设置成2个中文1个英文0作为结束符号  这样作为事情的名称  外部查找发送指令时能用到
   signed short ThingsL_JumpOn;  //驻留计数
   signed short ThingsL_State;   //一件事情里面的第几个小case 这件事情的进程状态、0状态定义为什么都不干的状态
-  unsigned int ThingsL_TimeCnt; //毫秒计数
+  signed int   ThingsL_TimeCnt; //毫秒计数
   //第一个参数传入Poll序号，第二个参数跳转状态 负数则不赋值进结构体 ，第三个参数驻留 如果过为ThingsL_PauseCaseCode则不赋值进结构体
   //列表中的这个位置函数 即可以放主循环轮询调用 也可以外部调用 控制内部跳转
   signed short (*ThingsL_Poll)(unsigned char, signed short, signed int);

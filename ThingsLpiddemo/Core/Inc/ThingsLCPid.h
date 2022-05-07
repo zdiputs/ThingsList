@@ -1,5 +1,5 @@
-#ifndef __THINGSPID_H
-#define __THINGSPID_H
+#ifndef __THINGSLCPID_H
+#define __THINGSLCPID_H
 #include "ThingsL.h"
 #define ListListCNum 3
  typedef struct cTings

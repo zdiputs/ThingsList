@@ -16,7 +16,7 @@ https:stgui.com   https://gitee.com/diputs
 ********************************************************************************/
 
 #include "main.h"
-#include "ThingsPid.h"
+#include "ThingsLCPid.h"
 
 TINGS_C tingsC_runData;//事情C的运行参数
 typedef struct _pid{

@@ -1072,10 +1072,16 @@
                     <name>$PROJ_DIR$\..\Core\Src\main.c</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\..\Core\Src\menu.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\Core\Src\stm32f4xx_hal_msp.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Core\Src\stm32f4xx_it.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Core\Src\ThingsL.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Core\Src\ThingsLA.c</name>
@@ -1087,13 +1093,7 @@
                     <name>$PROJ_DIR$\..\Core\Src\ThingsLCPid.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Core\Src\thingslist.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\ThingsMenuList.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\Core\Src\ThingsTOS.c</name>
+                    <name>$PROJ_DIR$\..\Core\Src\ThingsLDTopic.c</name>
                 </file>
             </group>
         </group>

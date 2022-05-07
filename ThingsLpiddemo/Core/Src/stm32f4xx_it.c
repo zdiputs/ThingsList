@@ -192,8 +192,10 @@ void SysTick_Handler(void)
   /* USER CODE BEGIN SysTick_IRQn 1 */
   keyScan();
   Menu1Ms++;
+#if ThingsTOS_C==1
   extern void TimeCnt(void);
     TimeCnt();
+#endif
   if(++Ms10 > 10)//菜单
  {
  	Ms10 = 0;

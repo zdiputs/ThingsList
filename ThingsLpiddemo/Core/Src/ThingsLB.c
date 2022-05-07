@@ -1,9 +1,6 @@
 #include "ThingsLB.h"
-
-
-
+//事情B示例
 TINGS_B tingsB_runData;//事情B的运行参数
-
 
 //-----------------事情B的步骤预处理函数--------其返回值的如果为JumpOver则会使得步骤跳过定时回调函数-----------------------
 JUMPTYPE funcStepB1Pre(void * ThingsL_perSteprun){return JumpLeft;}
