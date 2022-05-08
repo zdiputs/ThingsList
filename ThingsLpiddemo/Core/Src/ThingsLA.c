@@ -33,7 +33,7 @@ JUMPTYPE funcStepA3Jue(void * ThingsL_perSteprun){return JumpLeft;}
 //预处理环节函数
 //定时回调函数
 LISTLIST_FRAME ThingsL_ListListA[ListListANum] = {
-  {"A步骤1", STEP_PREPOLL,STEP_0, 100, 1,0,funcStepA1Pre,funcStepA1Jue}, // A1步骤记录体  一行记录与一件步骤对应
-  {"A步骤2", STEP_PREPOLL,STEP_0, 100, 2,0,funcStepA2Pre,funcStepA2Jue}, // A2步骤记录体  一行记录与一件步骤对应
-  {"A步骤3", STEP_PREPOLL,STEP_0, 100, 0,0,funcStepA3Pre,funcStepA3Jue}  // A2步骤记录体  一行记录与一件步骤对应
+  {"A步骤1", STEP_PREPOLL,STEP_0, 100, JumpS1,JumpS0,funcStepA1Pre,funcStepA1Jue}, // A1步骤记录体  一行记录与一件步骤对应
+  {"A步骤2", STEP_PREPOLL,STEP_0, 100, JumpS2,JumpS0,funcStepA2Pre,funcStepA2Jue}, // A2步骤记录体  一行记录与一件步骤对应
+  {"A步骤3", STEP_PREPOLL,STEP_0, 100, JumpS0,JumpS0,funcStepA3Pre,funcStepA3Jue}  // A2步骤记录体  一行记录与一件步骤对应
 };

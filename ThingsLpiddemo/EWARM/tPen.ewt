@@ -1448,6 +1448,9 @@
                     <name>$PROJ_DIR$\..\Core\Src\stm32f4xx_it.c</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\..\Core\Src\ThingsEvent.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\Core\Src\ThingsL.c</name>
                 </file>
                 <file>

@@ -15,6 +15,7 @@ Auth:火星火箭 (z)diputs qq572981033 https://gitee.com/diputs/things-menu-list
 ********************************************************************************/
 #include "main.h"
 #include "string.h"
+#include "ThingsEvent.h"//事件驱动的包含
 #include "ThingsL.h"//ThingsList的事情列表和其调度器的包含
 #include "ThingsLA.h"//事情A的包含
 #include "ThingsLB.h"//事情B的包含
@@ -196,3 +197,9 @@ void ThingsL_erRunSequence(void)
     ThingsL_erRunSeqFun(i, ThingsL_MainPollCode, ThingsL_MainPollCode);
   }
 }
+
+
+
+
+
+

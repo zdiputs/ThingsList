@@ -100,6 +100,9 @@ typedef enum STEPSTATUS//一步骤下的环节状态
   STEP_1,    //只运行定时回调环节
   STEP_2,
 } STEPSTA;
+
+
+//-----------------------步骤List-------------------------------------------------------------------
 typedef struct listsTaskFrame//步骤
 {
   const char *title;           //步骤的标题 在外部调用的时候可以查找匹配的字符串找出步骤列表中的序号
@@ -112,6 +115,7 @@ typedef struct listsTaskFrame//步骤
   JUMPTYPE (*funStepJue)(void *);//每个步骤的退出选择函数 同时是定时回调  返回值JumpStay时意味着驻留在定时函数中定时执行 同时事情状态中的驻留计数自减1
   
 } LISTLIST_FRAME;
+
 //-----------------------事情List-------------------------------------------------------------------
 typedef struct ThingsL_perFrame//事情
 {
@@ -125,10 +129,6 @@ typedef struct ThingsL_perFrame//事情
   LISTLIST_FRAME *plistlist;//步骤指针、将一件事情指向一组步骤
   void * thingsrundata;//事情的运行参数的指针
 } ThingsL_PER_FRAME;
-
-
-
-
 
 
 #endif

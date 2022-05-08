@@ -1174,64 +1174,7 @@ char *BaudRateCode[] = {
   "38400",
   "115200"};
 
-// 5s停留页面
-const REC_FRAME PageStart[] = {
-  //*pTitle             ucTitleX  ucTitleRevX   ucTitleRevLen   *pVar                       ucVarX    ucVarLen  ucVarDecLen   VarType    siVarMax               siVarMin             **pEnumStr                                                                                     *pEvent                    RecRange          LineRange         RecType           *pLinkEnter           *pLinkEsc
-  { "################",       0,        0,           0,             NULL,                        0,       0,        0,           V_NOP,        0,                    0,                   NULL,                                                                                NullEvent,                       REC_TOP,          LINE_TOPEND,      RECTP_LINK,       PageHome,             PageHome,        },
-  { " System Booting ",       0,        0,           0,             NULL,                        0,       0,        0,           V_NOP,        0,                    0,                   NULL,                                                                                NullEvent,                       REC_MIDDLE,       LINE_TOPEND,      RECTP_LINK,       PageHome,             PageHome,        },
-  { " Please Wait    ",       0,        0,           0,             NULL,                        0,       0,        0,           V_NOP,        0,                    0,                   NULL,                                                                                NullEvent,                       REC_MIDDLE,       LINE_TOPEND,      RECTP_LINK,       PageHome,             PageHome,        },
-  { "################",       0,        0,           0,             NULL,                        0,       0,        0,           V_NOP,        0,                    0,                   NULL,                                                                                NullEvent,                       REC_MIDDLE,       LINE_TOPEND,      RECTP_LINK,       PageHome,             PageHome,        },
-  { "################",       0,        0,           0,             NULL,                        0,       0,        0,           V_NOP,        0,                    0,                   NULL,                                                                                NullEvent,                       REC_END,          LINE_TOPEND,      RECTP_LINK,       PageHome,             PageHome,        }
-};
 
-//主页    记录表
-const REC_FRAME PageHome[] = {
-  //*pTitle               ucTitleX     ucTitleRevX  ucTitleRevLen  *pVar                      ucVarX    ucVarLen  ucVarDecLen   VarType     siVarMax              siVarMin             **pEnumStr                                                                                 *pEvent                      RecRange          LineRange         RecType           *pLinkEnter           *pLinkEsc
-  {"在线模块数:     ", 0, 0, 10, &OnLineNum, 12, 2, 0, V_UCHAR, 15, 0, NULL, NullEvent, REC_TOP, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
-  {"直流电压:      V", 0, 0, 5, &MainPara.DcV, 9, 5, 1, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
-  {"状态:           ", 0, 0, 5, &MainPara.SysSta, 8, 5, 0, V_ENUM, 1, 0, ( char **)SysCode, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
-  {"[模块]  ",         0, 1, 4, NULL, 5, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOP, RECTP_LINK, PageView, PageHome},
-  {"  [设置]",         8, 11, 4, NULL, 5, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_MIDDLE, LINE_END, RECTP_LINK, PageSet, PageHome},
-  {"                ", 0, 0, 0, NULL, 0, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_END, LINE_TOPEND, RECTP_LINK, PageHome, PageHome},
-};
-
-//详情
-
-const REC_FRAME PageView[] = {
-  //*pTitle             ucTitleX     ucTitleRevX    ucTitleRevLen   *pVar                   ucVarX    ucVarLen  ucVarDecLen   VarType      siVarMax             siVarMin           **pEnumStr                                                                                      *pEvent                    RecRange              LineRange     RecType         *pLinkEnter            *pLinkEsc
-  {"查看:  [   ]    ", 0, 0, 4, &iMenuNum, 8, 2, 0, V_UCHAR, 0x0f, 0, NULL, NullEvent, REC_TOP, LINE_TOP, RECTP_EDIT, NULL, PageHome},
-  {NullCode[0],        0, 0, 1, &iMenuNumOnlineFlag, 12, 4, 0, V_ENUM, 2, 0, ( char **)OnlineCode, NullEvent, REC_MIDDLE, LINE_END, RECTP_NOCUR, NULL, PageHome},
-  {"电压A:         V", 0, 0, 5, &iMenu.V1, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
-  {"电压B:         V", 0, 0, 5, &iMenu.V2, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
-  {"电压C:         V", 0, 0, 5, &iMenu.V3, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
-  {"电流A:         A", 0, 0, 5, &iMenu.I1, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
-  {"电流B:         A", 0, 0, 5, &iMenu.I2, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
-  {"电流C:         A", 0, 0, 5, &iMenu.I3, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
-  {"-----[退出]---- ", 0, 6, 4, NULL, 9, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_LINK, PageHome, PageHome},
-  {"                 ",0, 0, 0, NULL, 0, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_END, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome}
-  
-};
-
-//通用设置
-const REC_FRAME PageSet[] = {
-  //*pTitle                ucTitleX     ucTitleRevX     ucTitleRevLen   *pVar                  ucVarX    ucVarLen  ucVarDecLen  VarType       siVarMax              siVarMin            **pEnumStr                                                                                    *pEvent                 RecRange          LineRange        RecType          *pLinkEnter            *pLinkEsc
-  {"市电A报警:      ", 0, 0, 5, &SavePara.Awarm, 10, 5, 0, V_ENUM, WarnOnOffMax, WarnOnOffMin, ( char **)OFCode, FlashUpdate, REC_TOP, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"市电B报警:      ", 0, 0, 5, &SavePara.Bwarm, 10, 5, 0, V_ENUM, WarnOnOffMax, WarnOnOffMin, ( char **)OFCode, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"市电C报警:      ", 0, 0, 5, &SavePara.Cwarm, 10, 5, 0, V_ENUM, WarnOnOffMax, WarnOnOffMin, ( char **)OFCode, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"直流报警:       ", 0, 0, 5, &SavePara.DcWarm, 10, 5, 0, V_ENUM, WarnOnOffMax, WarnOnOffMin, ( char **)OFCode, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"欠压补偿:       ", 0, 0, 5, &SavePara.DacOut, 10, 5, 0, V_ENUM, WarnOnOffMax, WarnOnOffMin, ( char **)OFCode, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"补偿电压:      V", 0, 0, 5, &SavePara.DacVal, 9, 5, 1, V_UCHAR, DacValMax, DacValMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"直流过压:      V", 0, 0, 5, &SavePara.DcHig, 9, 5, 1, V_USHORT, DcHigMax, DcHigMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"直流欠压:      V", 0, 0, 5, &SavePara.DcLow, 9, 5, 1, V_USHORT, DcLowMax, DcLowMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"直流触发:      V", 0, 0, 5, &SavePara.DcRig, 9, 5, 1, V_USHORT, DcRigMax, DcRigMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"交流过压:      V", 0, 0, 5, &SavePara.AcHig, 9, 5, 0, V_USHORT, AcHigMax, AcHigMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"交流欠压:      V", 0, 0, 5, &SavePara.AcLow, 9, 5, 0, V_UCHAR, AcLowMin, AcLowMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"波特率:         ", 0, 0, 5, &SavePara.Bdrate, 10, 5, 0, V_ENUM, BdrateMax, BdrateMin, ( char **)BaudRateCode, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"地址:           ", 0, 0, 4, &SavePara.Addr, 10, 3, 0, V_UCHAR, AddrMax, AddrMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
-  {"-----[退出]---- ", 0, 6, 2, NULL, 0, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_LINK, PageHome, PageHome},
-  {"                ", 0, 0, 0, NULL, 0, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_END, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome}
-  
-};
 
 void getKey(KEYTYPE_FRAME *pwhichKey, KEYSTA_FRAME *pKeySta, unsigned int *pkeyNum)
 {
@@ -2060,3 +2003,65 @@ void MenuCtrl(void)
     break;
   }
 }
+
+
+
+
+// 5s停留页面
+const REC_FRAME PageStart[] = {
+  //*pTitle             ucTitleX  ucTitleRevX   ucTitleRevLen   *pVar                       ucVarX    ucVarLen  ucVarDecLen   VarType    siVarMax               siVarMin             **pEnumStr                                                                                     *pEvent                    RecRange          LineRange         RecType           *pLinkEnter           *pLinkEsc
+  { "################",       0,        0,           0,             NULL,                        0,       0,        0,           V_NOP,        0,                    0,                   NULL,                                                                                NullEvent,                       REC_TOP,          LINE_TOPEND,      RECTP_LINK,       PageHome,             PageHome,        },
+  { " System Booting ",       0,        0,           0,             NULL,                        0,       0,        0,           V_NOP,        0,                    0,                   NULL,                                                                                NullEvent,                       REC_MIDDLE,       LINE_TOPEND,      RECTP_LINK,       PageHome,             PageHome,        },
+  { " Please Wait    ",       0,        0,           0,             NULL,                        0,       0,        0,           V_NOP,        0,                    0,                   NULL,                                                                                NullEvent,                       REC_MIDDLE,       LINE_TOPEND,      RECTP_LINK,       PageHome,             PageHome,        },
+  { "################",       0,        0,           0,             NULL,                        0,       0,        0,           V_NOP,        0,                    0,                   NULL,                                                                                NullEvent,                       REC_MIDDLE,       LINE_TOPEND,      RECTP_LINK,       PageHome,             PageHome,        },
+  { "################",       0,        0,           0,             NULL,                        0,       0,        0,           V_NOP,        0,                    0,                   NULL,                                                                                NullEvent,                       REC_END,          LINE_TOPEND,      RECTP_LINK,       PageHome,             PageHome,        }
+};
+
+//主页    记录表
+const REC_FRAME PageHome[] = {
+  //*pTitle               ucTitleX     ucTitleRevX  ucTitleRevLen  *pVar                      ucVarX    ucVarLen  ucVarDecLen   VarType     siVarMax              siVarMin             **pEnumStr                                                                                 *pEvent                      RecRange          LineRange         RecType           *pLinkEnter           *pLinkEsc
+  {"在线模块数:     ", 0, 0, 10, &OnLineNum, 12, 2, 0, V_UCHAR, 15, 0, NULL, NullEvent, REC_TOP, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
+  {"直流电压:      V", 0, 0, 5, &MainPara.DcV, 9, 5, 1, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
+  {"状态:           ", 0, 0, 5, &MainPara.SysSta, 8, 5, 0, V_ENUM, 1, 0, ( char **)SysCode, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
+  {"[模块]  ",         0, 1, 4, NULL, 5, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOP, RECTP_LINK, PageView, PageHome},
+  {"  [设置]",         8, 11, 4, NULL, 5, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_MIDDLE, LINE_END, RECTP_LINK, PageSet, PageHome},
+  {"                ", 0, 0, 0, NULL, 0, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_END, LINE_TOPEND, RECTP_LINK, PageHome, PageHome},
+};
+
+//详情
+
+const REC_FRAME PageView[] = {
+  //*pTitle             ucTitleX     ucTitleRevX    ucTitleRevLen   *pVar                   ucVarX    ucVarLen  ucVarDecLen   VarType      siVarMax             siVarMin           **pEnumStr                                                                                      *pEvent                    RecRange              LineRange     RecType         *pLinkEnter            *pLinkEsc
+  {"查看:  [   ]    ", 0, 0, 4, &iMenuNum, 8, 2, 0, V_UCHAR, 0x0f, 0, NULL, NullEvent, REC_TOP, LINE_TOP, RECTP_EDIT, NULL, PageHome},
+  {NullCode[0],        0, 0, 1, &iMenuNumOnlineFlag, 12, 4, 0, V_ENUM, 2, 0, ( char **)OnlineCode, NullEvent, REC_MIDDLE, LINE_END, RECTP_NOCUR, NULL, PageHome},
+  {"电压A:         V", 0, 0, 5, &iMenu.V1, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
+  {"电压B:         V", 0, 0, 5, &iMenu.V2, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
+  {"电压C:         V", 0, 0, 5, &iMenu.V3, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
+  {"电流A:         A", 0, 0, 5, &iMenu.I1, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
+  {"电流B:         A", 0, 0, 5, &iMenu.I2, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
+  {"电流C:         A", 0, 0, 5, &iMenu.I3, 9, 5, 0, V_USHORT, 1000, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome},
+  {"-----[退出]---- ", 0, 6, 4, NULL, 9, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_LINK, PageHome, PageHome},
+  {"                 ",0, 0, 0, NULL, 0, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_END, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome}
+  
+};
+
+//通用设置
+const REC_FRAME PageSet[] = {
+  //*pTitle                ucTitleX     ucTitleRevX     ucTitleRevLen   *pVar                  ucVarX    ucVarLen  ucVarDecLen  VarType       siVarMax              siVarMin            **pEnumStr                                                                                    *pEvent                 RecRange          LineRange        RecType          *pLinkEnter            *pLinkEsc
+  {"市电A报警:      ", 0, 0, 5, &SavePara.Awarm, 10, 5, 0, V_ENUM, WarnOnOffMax, WarnOnOffMin, ( char **)OFCode, FlashUpdate, REC_TOP, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"市电B报警:      ", 0, 0, 5, &SavePara.Bwarm, 10, 5, 0, V_ENUM, WarnOnOffMax, WarnOnOffMin, ( char **)OFCode, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"市电C报警:      ", 0, 0, 5, &SavePara.Cwarm, 10, 5, 0, V_ENUM, WarnOnOffMax, WarnOnOffMin, ( char **)OFCode, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"直流报警:       ", 0, 0, 5, &SavePara.DcWarm, 10, 5, 0, V_ENUM, WarnOnOffMax, WarnOnOffMin, ( char **)OFCode, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"欠压补偿:       ", 0, 0, 5, &SavePara.DacOut, 10, 5, 0, V_ENUM, WarnOnOffMax, WarnOnOffMin, ( char **)OFCode, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"补偿电压:      V", 0, 0, 5, &SavePara.DacVal, 9, 5, 1, V_UCHAR, DacValMax, DacValMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"直流过压:      V", 0, 0, 5, &SavePara.DcHig, 9, 5, 1, V_USHORT, DcHigMax, DcHigMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"直流欠压:      V", 0, 0, 5, &SavePara.DcLow, 9, 5, 1, V_USHORT, DcLowMax, DcLowMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"直流触发:      V", 0, 0, 5, &SavePara.DcRig, 9, 5, 1, V_USHORT, DcRigMax, DcRigMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"交流过压:      V", 0, 0, 5, &SavePara.AcHig, 9, 5, 0, V_USHORT, AcHigMax, AcHigMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"交流欠压:      V", 0, 0, 5, &SavePara.AcLow, 9, 5, 0, V_UCHAR, AcLowMin, AcLowMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"波特率:         ", 0, 0, 5, &SavePara.Bdrate, 10, 5, 0, V_ENUM, BdrateMax, BdrateMin, ( char **)BaudRateCode, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"地址:           ", 0, 0, 4, &SavePara.Addr, 10, 3, 0, V_UCHAR, AddrMax, AddrMin, NULL, FlashUpdate, REC_MIDDLE, LINE_TOPEND, RECTP_EDIT, NULL, PageHome},
+  {"-----[退出]---- ", 0, 6, 2, NULL, 0, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_MIDDLE, LINE_TOPEND, RECTP_LINK, PageHome, PageHome},
+  {"                ", 0, 0, 0, NULL, 0, 0, 0, V_NOP, 0, 0, NULL, NullEvent, REC_END, LINE_TOPEND, RECTP_NOCUR, NULL, PageHome}
+  
+};

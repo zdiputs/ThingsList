@@ -36,8 +36,8 @@ JUMPTYPE funcStepB3Jue(void * ThingsL_perSteprun){return JumpLeft;}
 //预处理环节函数
 //定时回调函数
 LISTLIST_FRAME ThingsL_ListListB[ListListBNum] = {
-  {"B步骤1", STEP_PREPOLL,STEP_0, 100, 1,0,funcStepB1Pre,funcStepB1Jue}, // B1步骤记录体  一行记录与一件步骤对应
-  {"B步骤2", STEP_PREPOLL,STEP_0, 100, 2,0,funcStepB2Pre,funcStepB2Jue}, // B2步骤记录体  一行记录与一件步骤对应
-  {"B步骤3", STEP_PREPOLL,STEP_0, 100, 0,0,funcStepB3Pre,funcStepB3Jue}  // B3步骤记录体  一行记录与一件步骤对应
+  {"B步骤1", STEP_PREPOLL,STEP_0, 100, JumpS1,JumpS0,funcStepB1Pre,funcStepB1Jue}, // B1步骤记录体  一行记录与一件步骤对应
+  {"B步骤2", STEP_PREPOLL,STEP_0, 100, JumpS2,JumpS0,funcStepB2Pre,funcStepB2Jue}, // B2步骤记录体  一行记录与一件步骤对应
+  {"B步骤3", STEP_PREPOLL,STEP_0, 100, JumpS0,JumpS0,funcStepB3Pre,funcStepB3Jue}  // B3步骤记录体  一行记录与一件步骤对应
 
 };
