@@ -1,4 +1,5 @@
-# ThingsStepList (事情步骤列表框架)
+# ThingsStepList 
+## 全名：Things Step Segment List And Event 【事情步骤环节列表以及事件】
 
 - **ThingsStepList**主要用于单片机裸机编程中的多任务(事情)流程处理，它使用简单静态列表管理事情和步骤。
 - **ThingsStepList**是一种特定形式的**状态机**和**伪RTOS**框架，它为动作流程自动化管理提供一套轻量、简便、直观的C语言代码接口函数及列表框架，他的列表形式非常直观无须转换成状态图也能快速理解其状态转移的顺序和结构。
