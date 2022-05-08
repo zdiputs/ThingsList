@@ -8,11 +8,11 @@
                 "STM32F401xC="
             ],
             "includePath": [
-                "f:\\Zhang\\things-menu-list\\tPen\\Core\\Inc",
-                "f:\\Zhang\\things-menu-list\\tPen\\Drivers\\STM32F4xx_HAL_Driver\\Inc",
-                "f:\\Zhang\\things-menu-list\\tPen\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy",
-                "f:\\Zhang\\things-menu-list\\tPen\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include",
-                "f:\\Zhang\\things-menu-list\\tPen\\Drivers\\CMSIS\\Include"
+                "${workspaceRoot}\\Core\\Inc",
+                "${workspaceRoot}\\Drivers\\STM32F4xx_HAL_Driver\\Inc",
+                "${workspaceRoot}\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy",
+                "${workspaceRoot}\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include",
+                "${workspaceRoot}\\Drivers\\CMSIS\\Include"
             ],
             "forcedInclude": [],
             "cStandard": "c11",

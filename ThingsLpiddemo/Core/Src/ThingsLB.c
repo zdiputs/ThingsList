@@ -1,3 +1,17 @@
+/********************************************************************************
+"path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\",
+"path": "D:\\iar9.20\\",
+事情List                   ThingsL_PER_FRAME
+步骤List                 LISTLIST_FRAME
+每个步骤里面划3个环节   StepSegFlag
+这里事情的序号是i  事情里面步骤的呼号是j
+j=0    j=1    j=2     j=3    j=4
+i=0事情A     步骤1  步骤2  步骤3   步骤4   步骤4
+i=1事情B     步骤1  步骤2  步骤3   步骤4
+i=2事情C     步骤1  步骤2  步骤3
+*********************************************************************************
+Auth:火星火箭 (z)diputs qq572981033 https://gitee.com/diputs/things-menu-list
+********************************************************************************/
 #include "ThingsLB.h"
 //事情B示例
 TINGS_B tingsB_runData;//事情B的运行参数

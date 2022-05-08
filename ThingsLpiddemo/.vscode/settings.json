@@ -2,6 +2,8 @@
     "iar.enabled":true,
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
-        "thingsla.h": "c"
+        "thingsla.h": "c",
+        "thingsl.h": "c",
+        "thingsldtopic.h": "c"
     }
 }

@@ -1093,7 +1093,7 @@
                     <name>$PROJ_DIR$\..\Core\Src\ThingsLCPid.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Core\Src\ThingsLDTopic.c</name>
+                    <name>$PROJ_DIR$\..\Core\Src\ThingsLDmenu.c</name>
                 </file>
             </group>
         </group>

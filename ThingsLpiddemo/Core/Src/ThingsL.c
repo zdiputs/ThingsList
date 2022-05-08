@@ -11,17 +11,15 @@ i=0事情A     步骤1  步骤2  步骤3   步骤4   步骤4
 i=1事情B     步骤1  步骤2  步骤3   步骤4
 i=2事情C     步骤1  步骤2  步骤3
 *********************************************************************************
-Auth:火星火箭      (z)diputs
-http:iamrobot.top https://github.com/zdiputs
-https:stgui.com   https://gitee.com/diputs
+Auth:火星火箭 (z)diputs qq572981033 https://gitee.com/diputs/things-menu-list
 ********************************************************************************/
 #include "main.h"
 #include "string.h"
-#include "ThingsL.h"
+#include "ThingsL.h"//ThingsList的事情列表和其调度器的包含
 #include "ThingsLA.h"//事情A的包含
 #include "ThingsLB.h"//事情B的包含
 #include "ThingsLCPid.h"//事情C的包含 这里是pid的示例
-#include "ThingsLDTopic.h"
+#include "ThingsLDmenu.h"//事情D的包含 这里菜单的示例
 
 ThingsL_PER_FRAME ThingsL_List[ThingsL_perNum];           //事情列表声明
 signed short ThingsL_perGeneralSch(unsigned char i, signed short Config, signed int Stay);//通用调度器
@@ -32,14 +30,9 @@ ThingsL_PER_FRAME ThingsL_List[ThingsL_perNum] =
 {
   {"事情A",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListA[0],&tingsA_runData},//一行记录与一件事情对应
   {"事情B",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListB[0],&tingsB_runData},//一行记录与一件事情对应
-  {"PID控",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListC[0],&tingsC_runData},//一行记录与一件事情对应
-  {"PID控",1, JumpS0, -1,ThingsL_perGeneralSch,&ThingsL_ListListD[0],&tingsC_runData}//一行记录与一件事情对应
+  {"控制C",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListC[0],&tingsC_runData},//一行记录与一件事情对应
+  {"显示D",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListD[0],&tingsC_runData}//一行记录与一件事情对应
 };
-
-
-
-
-
 
 //外部调用
 //这个函数是拿来给别的外部用的

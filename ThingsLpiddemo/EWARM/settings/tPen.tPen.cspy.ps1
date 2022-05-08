@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ProgramPro\things-menu-list\ThingsLpiddemo\EWARM\settings\tPen.tPen.general.xcl" --backend -f "C:\ProgramPro\things-menu-list\ThingsLpiddemo\EWARM\settings\tPen.tPen.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ProgramPro\ThingsSetpList\ThingsLpiddemo\EWARM\settings\tPen.tPen.general.xcl" --backend -f "C:\ProgramPro\ThingsSetpList\ThingsLpiddemo\EWARM\settings\tPen.tPen.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ProgramPro\things-menu-list\ThingsLpiddemo\EWARM\settings\tPen.tPen.general.xcl" --debug_file=$debugfile --backend -f "C:\ProgramPro\things-menu-list\ThingsLpiddemo\EWARM\settings\tPen.tPen.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ProgramPro\ThingsSetpList\ThingsLpiddemo\EWARM\settings\tPen.tPen.general.xcl" --debug_file=$debugfile --backend -f "C:\ProgramPro\ThingsSetpList\ThingsLpiddemo\EWARM\settings\tPen.tPen.driver.xcl" 
 }

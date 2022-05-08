@@ -10,9 +10,7 @@ i=0事情A     步骤1  步骤2  步骤3   步骤4   步骤4
 i=1事情B     步骤1  步骤2  步骤3   步骤4
 i=2事情C     步骤1  步骤2  步骤3
 *********************************************************************************
-Auth:火星火箭      (z)diputs
-http:iamrobot.top https://github.com/zdiputs
-https:stgui.com   https://gitee.com/diputs
+Auth:火星火箭 (z)diputs qq572981033 https://gitee.com/diputs/things-menu-list
 ********************************************************************************/
 
 #include "main.h"

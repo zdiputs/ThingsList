@@ -91,10 +91,12 @@ extern unsigned short AdDataOrig[SUMC][2];
 #define ADCPause     HAL_ADC_Stop(&hadc1)
 #define ADCContinue  HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&AdDataOrig,SUMC*2)
 extern UART_HandleTypeDef huart1;
+extern void ThingsL_erRunSequence(void);
 extern unsigned int Menu1Ms;
 extern unsigned char Menu1Sec;
+ 
 void SuperRunSequence(void);
-void SupTimeCntFun(void);
+
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

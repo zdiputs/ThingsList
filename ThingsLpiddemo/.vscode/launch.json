@@ -15,7 +15,7 @@
             "servertype": "stlink"
         },
         {
-            "name": "jlinkgdb",
+            "name": "tPen",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/EWARM/tPen/Exe/tPen.out",
