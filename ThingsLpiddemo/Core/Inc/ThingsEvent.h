@@ -3,18 +3,18 @@
 
 //-----------------------事件通知-------------------------------------------------------------------
 #define ThingsLeventNumMax 20
-typedef enum _eventype//事件的类型
-{
-  E_Key=0,
-  E_A1,
-  E_A2,
-  E_A3,
-  E_A4,
-  E_A5,
-} EVENTYPE;
+
+#define EvtNon 0
+#define EvtKey (1<<0)
+#define EvtCom (1<<1)
+#define EvtTy3 (1<<2)
+#define EvtTy4 (1<<3)
+#define EvtTy5 (1<<4)
+
 typedef struct _eventList//事件的表
 {
-  EVENTYPE ev_type;
+  unsigned int ev_type;
+  unsigned short ev_cmd;
   unsigned char ev_len;
   void *ev_Data;          
 } ThingsL_EVENT_List;
@@ -25,7 +25,7 @@ typedef struct _eventControl//步骤
 } ThingsL_Event_Con;
 
 
-signed char ThingsL_PutEvent(EVENTYPE etype,void *ev_Data,unsigned char ev_len);
-signed char ThingsL_GetEvent(EVENTYPE etype);
+signed char ThingsL_PutEvent(unsigned int etype,unsigned short ev_cmd,unsigned char ev_len,void *ev_Data);
+signed char ThingsL_GetEvent(unsigned int etype);
 signed char ThingsL_DetEvent(signed char id);
 #endif

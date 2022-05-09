@@ -128,6 +128,8 @@ typedef struct ThingsL_perFrame//事情
   signed short (*ThingsL_Poll)(unsigned char, signed short, signed int);
   LISTLIST_FRAME *plistlist;//步骤指针、将一件事情指向一组步骤
   void * thingsrundata;//事情的运行参数的指针
+  unsigned int eventmask;//所关心事件的掩码
+  unsigned int eventgetflag;//是否已经被这件事情获得该类型事件的标记
 } ThingsL_PER_FRAME;
 
 

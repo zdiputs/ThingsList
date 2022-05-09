@@ -15,17 +15,19 @@ ThingsL_Event_Con thingsl_event_control={//事件队列的控制参数只需要一个计数器
   .cnt=0,
 };
 
-//etype事件的类型
-//ev_Data事件的数据
-//ev_len事件数据的长度
+//etype   事件的类型
+//ev_cmd  事件的指令
+//ev_Data 事件的数据
+//ev_len  事件数据的长度
 //返回：成功写入返回队列序号，不成功返回负1
-signed char ThingsL_PutEvent(EVENTYPE etype,void *ev_Data,unsigned char ev_len)
+signed char ThingsL_PutEvent(unsigned int etype,unsigned short ev_cmd,unsigned char ev_len,void *ev_Data)
 {
   if(thingsl_event_control.cnt<ThingsLeventNumMax)//不满
   {
     thongsl_event_fifo[thingsl_event_control.cnt].ev_type=etype;//事件类型
-    thongsl_event_fifo[thingsl_event_control.cnt].ev_Data=ev_Data;//事件的数据
+    thongsl_event_fifo[thingsl_event_control.cnt].ev_cmd=ev_cmd;//事件类型
     thongsl_event_fifo[thingsl_event_control.cnt].ev_len=ev_len;//事件的数据的长度
+    thongsl_event_fifo[thingsl_event_control.cnt].ev_Data=ev_Data;//事件的数据
     thingsl_event_control.cnt++;
     return thingsl_event_control.cnt;//现存事件个数
   }
@@ -33,7 +35,7 @@ signed char ThingsL_PutEvent(EVENTYPE etype,void *ev_Data,unsigned char ev_len)
 }
 //etype 需要检索的事件类型,事件的接收方调用这个函数形参输入事件的类型表示只读取特定类型的事件
 //返回：检索到的第一个复合事件类型的数组下标，不成功返回负1
-signed char ThingsL_GetEvent(EVENTYPE etype)
+signed char ThingsL_GetEvent(unsigned int etype)
 {
   unsigned char i=0;
   for(i=0;i<thingsl_event_control.cnt;i++)//检索事件数组，一旦检索到返回下标
@@ -59,6 +61,7 @@ signed char ThingsL_DetEvent(signed char id)
     for(i=id;i<thingsl_event_control.cnt-1;i++)//下标为id的事件被取走了，[id]-[cnt]之间的事件数组集体前移
     {
       thongsl_event_fifo[i].ev_type=thongsl_event_fifo[i+1].ev_type;//事件类型
+      thongsl_event_fifo[i].ev_cmd=thongsl_event_fifo[i+1].ev_cmd;//事件的cmd
       thongsl_event_fifo[i].ev_Data=thongsl_event_fifo[i+1].ev_Data;//事件的数据
       thongsl_event_fifo[i].ev_len=thongsl_event_fifo[i+1].ev_len;//事件的数据长度
     }
