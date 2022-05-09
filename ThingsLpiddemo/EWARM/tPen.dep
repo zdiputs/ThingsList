@@ -168,7 +168,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 96 102</file>
+                    <file> 92 96 102</file>
                 </tool>
             </inputs>
         </file>

@@ -16,7 +16,8 @@ typedef struct _eventList//事件的表
   unsigned int ev_type;
   unsigned short ev_cmd;
   unsigned char ev_len;
-  void *ev_Data;          
+  void *ev_Data;   
+  unsigned int ev_thingsgetmask;
 } ThingsL_EVENT_List;
 
 typedef struct _eventControl//步骤
@@ -24,7 +25,7 @@ typedef struct _eventControl//步骤
   unsigned char cnt;//现存事件个数
 } ThingsL_Event_Con;
 
-
+extern ThingsL_EVENT_List thingsl_event_fifo[ThingsLeventNumMax];
 signed char ThingsL_PutEvent(unsigned int etype,unsigned short ev_cmd,unsigned char ev_len,void *ev_Data);
 signed char ThingsL_GetEvent(unsigned int etype);
 signed char ThingsL_DetEvent(signed char id);

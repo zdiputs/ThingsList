@@ -29,10 +29,10 @@ signed short ThingsL_perGeneralSch(unsigned char i, signed short Config, signed 
 //事情列表：是整件[大事]
 ThingsL_PER_FRAME ThingsL_List[ThingsL_perNum] =
 {
-  {"事情A",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListA[0],&tingsA_runData,EvtNon+EvtKey,0},//一行记录与一件事情对应
-  {"事情B",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListB[0],&tingsB_runData,EvtNon+EvtKey,0},//一行记录与一件事情对应
-  {"控制C",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListC[0],&tingsC_runData,EvtNon+EvtKey,0},//一行记录与一件事情对应
-  {"显示D",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListD[0],&tingsC_runData,EvtNon+EvtKey,0}//一行记录与一件事情对应
+  {"事情A",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListA[0],funcAeventRcv,EvtNon+EvtKey},//一行记录与一件事情对应
+  {"事情B",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListB[0],funcAeventRcv,EvtNon+EvtKey},//一行记录与一件事情对应
+  {"控制C",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListC[0],funcAeventRcv,EvtNon+EvtKey},//一行记录与一件事情对应
+  {"显示D",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListD[0],funcAeventRcv,EvtNon+EvtKey}//一行记录与一件事情对应
 };
 
 //外部调用
@@ -77,6 +77,9 @@ signed short ThingsL_perGeneralSch(unsigned char i, signed short Config, signed 
   //i 和 j这两个变量名称跟宏定义很多东西相关不要改掉
   signed short j; 
   JUMPTYPE stayleftright=JumpStay;
+  
+  ThingsL_EventRcvFunc;//事件接收处理  具体事件具体在函数中处理
+ 
   if (Stay != ThingsL_MainPollCode)//驻留
   {
     ThingsL_PollNum = Stay;

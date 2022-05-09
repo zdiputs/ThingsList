@@ -13,8 +13,51 @@ i=2事情C     步骤1  步骤2  步骤3
 Auth:火星火箭 (z)diputs qq572981033 https://gitee.com/diputs/things-menu-list
 ********************************************************************************/
 #include "ThingsLA.h"
+#include "ThingsEvent.h"
 //事情A示例
 TINGS_A tingsA_runData;//事情A的运行参数
+
+
+JUMPTYPE  funcAeventRcv(void * supperSteprun)//事件处理函数
+{
+  signed char ei=-1;
+  signed char detflag=0;
+  
+  ei=ThingsL_GetEvent(EvtCom);//事件数组列队中可能存储着不同类型的事件 但是对于一件事情可能就只关心特定几个类型的事件
+  if(ei>=0)//得到事件序号
+  { 
+    if((thingsl_event_fifo[ei].ev_thingsgetmask&0x00000001)==0)//这件事情从来没有被这件事抓到
+    {
+      //这里放事件的处理
+      //这里放事件的处理
+      //这里放事件的处理
+      //这里放事件的处理
+      thingsl_event_fifo[ei].ev_cmd=0;//事件类型
+      thingsl_event_fifo[ei].ev_len=0;//事件的数据的长度
+      thingsl_event_fifo[ei].ev_Data=0;//事件的数据
+    }
+    thingsl_event_fifo[ei].ev_thingsgetmask|=0x00000001;//这件事情已经被a事情得到过一次
+    
+    //这个事件其他事情是否想要得到 并且已经得到
+    for(unsigned char i=0;i<ThingsL_perNum;i++)//遍历其他事情
+    {
+      if( (((ThingsL_List[i].eventmask)&EvtCom)!=0) &&//这件事也想得到这类事件
+         (((thingsl_event_fifo[ei].ev_thingsgetmask)&(0x00000001<<i))==0)
+           )//其他事情想要得到这个事件 但是 还没有被得到  
+      {
+        detflag=1;
+      }
+    }
+    if(detflag==0)
+    {
+      ThingsL_DetEvent(ei);//等所有想得到这类事件的事情都得到后再进行删除
+    }
+  }
+  
+  ei=-1;
+  return JumpLeft;
+}
+
 
 //-----------------事情A的步骤预处理函数--------其返回值的如果为JumpOver则会使得步骤跳过定时回调函数------------------
 JUMPTYPE funcStepA1Pre(void * ThingsL_perSteprun){return JumpLeft;}

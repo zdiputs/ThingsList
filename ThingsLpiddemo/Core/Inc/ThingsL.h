@@ -26,11 +26,12 @@
 #define ThingsL_JumpIsEn 			(ThingsL_PollNum <= 0 && ThingsL_PollNum != ThingsL_PauseCaseCode) //减到0或负值才能单次跳转反向，不然就是循环次数
 #define ThingsL_MState 				(ThingsL_List[i].ThingsL_State)                              //当前事情的状态（同时为步骤列表的序号）
 #define ThingsL_MTimeCnt 			(ThingsL_List[i].ThingsL_TimeCnt)                          //当前时间的毫秒计数
+#define ThingsL_EventRcvFunc          (*ThingsL_List[i].eventrcv)(&ThingsL_List[i])           //事件接收
 #define ThingsL_MTimeMax  			(ThingsL_List[i].plistlist[j].internalCntMax)        //定时回调的超时数
 #define ThingsL_StepSegMod    		(ThingsL_List[i].plistlist[j].StepSegMod)     		//步骤中三种模式  第一种只运行预处理函数 第二章只运行定时函数 第三种先运行预处理函数再运行定时函数
 #define ThingsL_StepSegFlag    		(ThingsL_List[i].plistlist[j].StepSegFlag)     		//步骤中当前环节标志
-#define ThingsL_StepPreFunc    		(*ThingsL_List[i].plistlist[j].funStepPre)(ThingsL_List[i].thingsrundata)//预处理环节
-#define ThingsL_StepPollFunc   		((*ThingsL_List[i].plistlist[j].funStepJue)(ThingsL_List[i].thingsrundata))//定时调用环节
+#define ThingsL_StepPreFunc    		(*ThingsL_List[i].plistlist[j].funStepPre)(&ThingsL_List[i])//预处理环节
+#define ThingsL_StepPollFunc   		((*ThingsL_List[i].plistlist[j].funStepJue)(&ThingsL_List[i]))//定时调用环节
 #define ThingsL_erRunSeqFun			(*ThingsL_List[i].ThingsL_Poll)
 #define ThingsL_StepLeftNextIndex    (ThingsL_List[i].plistlist[j].nextleftIndex)   //下一状态左跳一般定义为顺序执行的序号 该事情状态赋值左跳值
 #define ThingsL_StepRightNextIndex    (ThingsL_List[i].plistlist[j].nextrightIndex) //下一状态右跳一般定义为返回执行的序号 该事情状态赋值右跳值
@@ -127,10 +128,9 @@ typedef struct ThingsL_perFrame//事情
   //列表中的这个位置函数 即可以放主循环轮询调用 也可以外部调用 控制内部跳转
   signed short (*ThingsL_Poll)(unsigned char, signed short, signed int);
   LISTLIST_FRAME *plistlist;//步骤指针、将一件事情指向一组步骤
-  void * thingsrundata;//事情的运行参数的指针
+  JUMPTYPE (*eventrcv)(void *); //每件事情的 事件接收函数
   unsigned int eventmask;//所关心事件的掩码
-  unsigned int eventgetflag;//是否已经被这件事情获得该类型事件的标记
 } ThingsL_PER_FRAME;
-
+extern ThingsL_PER_FRAME ThingsL_List[ThingsL_perNum];
 
 #endif
