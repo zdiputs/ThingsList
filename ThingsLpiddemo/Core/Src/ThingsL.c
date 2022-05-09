@@ -22,12 +22,12 @@ Auth:火星火箭 (z)diputs qq572981033 https://gitee.com/diputs/things-menu-list
 #include "ThingsLCPid.h"//事情C的包含 这里是pid的示例
 #include "ThingsLDmenu.h"//事情D的包含 这里菜单的示例
 
-ThingsL_PER_FRAME ThingsL_List[ThingsL_perNum];           //事情列表声明
+ThingsL_PER_FRAME ThingsL_List[MAXTHINGNUM];           //事情列表声明
 signed short ThingsL_perGeneralSch(unsigned char i, signed short Config, signed int Stay);//通用调度器
 
 
 //事情列表：是整件[大事]
-ThingsL_PER_FRAME ThingsL_List[ThingsL_perNum] =
+ThingsL_PER_FRAME ThingsL_List[MAXTHINGNUM] =
 {
   {"事情A",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListA[0],funcAeventRcv,EvtNon+EvtKey},//一行记录与一件事情对应
   {"事情B",1, JumpS0, 0, ThingsL_perGeneralSch,&ThingsL_ListListB[0],funcAeventRcv,EvtNon+EvtKey},//一行记录与一件事情对应
@@ -52,7 +52,7 @@ unsigned char SendThingsExtCode( char * pChar,signed short State,signed int Stay
   unsigned char str2[6];
   memcpy(str1,pChar,5);str1[5]=0;
   
-  for(i=0;i<ThingsL_perNum;i++)
+  for(i=0;i<MAXTHINGNUM;i++)
   {
     memcpy(str2,ThingsL_List[i].text,5);str2[5]=0;
     if(strcmp((char const *)str1,(char const *)str2)==0)
@@ -186,7 +186,7 @@ void NoSchedulerPutitLikethis(unsigned char i,signed short ConfigState,signed in
 void ThingsL_TimeCntFun(void)
 {
   unsigned char i = 0;
-  for (i = 0; i < ThingsL_perNum; i++)
+  for (i = 0; i < MAXTHINGNUM; i++)
   {
     ThingsL_MTimeCnt++;
   }
@@ -195,7 +195,7 @@ void ThingsL_TimeCntFun(void)
 //放到主循环当中
 void ThingsL_erRunSequence(void)
 {
-  for (unsigned char i = 0; i < ThingsL_perNum; i++)
+  for (unsigned char i = 0; i < MAXTHINGNUM; i++)
   {
     ThingsL_erRunSeqFun(i, ThingsL_MainPollCode, ThingsL_MainPollCode);
   }

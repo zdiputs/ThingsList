@@ -56,7 +56,7 @@
   [步骤5预处理环节]  /___
   [步骤5定时处理环节]____|循环执行某一个步骤中的定时回调函数表示“驻留”JumpStay
 ****************************************************************************************************************************************/
-#define ThingsL_perNum 4    //事情数
+#define MAXTHINGNUM 4    //事情数
 #define ListListANum 3 //事情里面的步骤数
 #define ListListBNum 3 //事情里面的步骤数
 
@@ -131,6 +131,6 @@ typedef struct ThingsL_perFrame//事情
   JUMPTYPE (*eventrcv)(void *); //每件事情的 事件接收函数
   unsigned int eventmask;//所关心事件的掩码
 } ThingsL_PER_FRAME;
-extern ThingsL_PER_FRAME ThingsL_List[ThingsL_perNum];
+extern ThingsL_PER_FRAME ThingsL_List[MAXTHINGNUM];
 
 #endif
